@@ -1,0 +1,16 @@
+export const colors = {
+  primary: '#58cc02',
+  primaryDark: '#46a302',
+  primaryLight: '#e3f8d1',
+  accent: '#1cb0f6',
+  accentLight: '#ddf4ff',
+  accentDark: '#1899d6',
+  ink: '#3c3c3c',
+  muted: '#afafaf',
+  track: '#e5e5e5',
+  danger: '#ff4b4b',
+  dangerLight: '#ffe1e1',
+  white: '#ffffff',
+  accentBorder: 'rgba(28, 176, 246, 0.3)',
+  modalBackdrop: 'rgba(0, 0, 0, 0.4)',
+} as const

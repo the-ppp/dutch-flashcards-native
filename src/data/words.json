@@ -1,0 +1,4002 @@
+[
+  {
+    "dutch": "ik",
+    "english": "I"
+  },
+  {
+    "dutch": "je",
+    "english": "you (informal)"
+  },
+  {
+    "dutch": "de",
+    "english": "the (common gender)"
+  },
+  {
+    "dutch": "is",
+    "english": "is"
+  },
+  {
+    "dutch": "van",
+    "english": "of"
+  },
+  {
+    "dutch": "we",
+    "english": "we"
+  },
+  {
+    "dutch": "ze",
+    "english": "they/she"
+  },
+  {
+    "dutch": "hij",
+    "english": "he"
+  },
+  {
+    "dutch": "er",
+    "english": "1. there (unstressed form of \"daar\" and \"hier\"); 2. of it, of them"
+  },
+  {
+    "dutch": "me",
+    "english": "me"
+  },
+  {
+    "dutch": "heb",
+    "english": "(I) have"
+  },
+  {
+    "dutch": "ben",
+    "english": "(I) am"
+  },
+  {
+    "dutch": "mijn",
+    "english": "my"
+  },
+  {
+    "dutch": "weet",
+    "english": "(I) know, (he) knows (facts)"
+  },
+  {
+    "dutch": "wel",
+    "english": "1. indeed, really (modal particle, e.g. \"ik denk het wel\" = I do think so); 2. as many as (before a number, e.g. \"wel duizend\")"
+  },
+  {
+    "dutch": "kan",
+    "english": "(I) can"
+  },
+  {
+    "dutch": "geen",
+    "english": "none/no/not"
+  },
+  {
+    "dutch": "moet",
+    "english": "(I) must"
+  },
+  {
+    "dutch": "hem",
+    "english": "him"
+  },
+  {
+    "dutch": "heeft",
+    "english": "has"
+  },
+  {
+    "dutch": "haar",
+    "english": "her"
+  },
+  {
+    "dutch": "ga",
+    "english": "(I) go"
+  },
+  {
+    "dutch": "het",
+    "english": "1. it; 2. the (before neuter/het-nouns)"
+  },
+  {
+    "dutch": "bent",
+    "english": "(you) are"
+  },
+  {
+    "dutch": "kom",
+    "english": "(I) come"
+  },
+  {
+    "dutch": "mij",
+    "english": "me, I"
+  },
+  {
+    "dutch": "gaat",
+    "english": "(you) go, (he) goes"
+  },
+  {
+    "dutch": "zal",
+    "english": "(I) shall"
+  },
+  {
+    "dutch": "toch",
+    "english": "yet/still/nevertheless"
+  },
+  {
+    "dutch": "door",
+    "english": "1. through; 2. [~ de deur] through the door"
+  },
+  {
+    "dutch": "mee",
+    "english": "along/together/with"
+  },
+  {
+    "dutch": "de zomer",
+    "english": "the summer"
+  },
+  {
+    "dutch": "dat",
+    "english": "that"
+  },
+  {
+    "dutch": "niet",
+    "english": "not"
+  },
+  {
+    "dutch": "een",
+    "english": "a"
+  },
+  {
+    "dutch": "en",
+    "english": "and"
+  },
+  {
+    "dutch": "wat",
+    "english": "what"
+  },
+  {
+    "dutch": "maar",
+    "english": "but"
+  },
+  {
+    "dutch": "op",
+    "english": "1. on, in, at; 2. [~ de tv] on TV; 3. [~ de bank] on the sofa"
+  },
+  {
+    "dutch": "zijn",
+    "english": "to be"
+  },
+  {
+    "dutch": "te",
+    "english": "too"
+  },
+  {
+    "dutch": "die",
+    "english": "1. that (m/f); those (plural); 2. that, who, which"
+  },
+  {
+    "dutch": "met",
+    "english": "with"
+  },
+  {
+    "dutch": "voor",
+    "english": "for, before, in front of"
+  },
+  {
+    "dutch": "als",
+    "english": "when/if, as"
+  },
+  {
+    "dutch": "u",
+    "english": "1. you (formal); 2. [wie bent ~?] who are you?"
+  },
+  {
+    "dutch": "was",
+    "english": "(I/he) was, (you) were"
+  },
+  {
+    "dutch": "dit, deze",
+    "english": "this"
+  },
+  {
+    "dutch": "hier",
+    "english": "here"
+  },
+  {
+    "dutch": "jij",
+    "english": "you (stressed)"
+  },
+  {
+    "dutch": "naar",
+    "english": "to"
+  },
+  {
+    "dutch": "om",
+    "english": "1. at, around, about; 2. [~ negen uur] at nine o'clock; 3. over, finished"
+  },
+  {
+    "dutch": "dan",
+    "english": "1. than; 2. then; 3. [nu en ~] now and then"
+  },
+  {
+    "dutch": "nog",
+    "english": "still"
+  },
+  {
+    "dutch": "wil",
+    "english": "(I) want"
+  },
+  {
+    "dutch": "zo",
+    "english": "so"
+  },
+  {
+    "dutch": "aan",
+    "english": "1. on; 2. [~ de slag] let's get to work"
+  },
+  {
+    "dutch": "goed",
+    "english": "alright, fine, good"
+  },
+  {
+    "dutch": "hebben",
+    "english": "to have"
+  },
+  {
+    "dutch": "ja",
+    "english": "yes"
+  },
+  {
+    "dutch": "hoe",
+    "english": "how"
+  },
+  {
+    "dutch": "waar",
+    "english": "where"
+  },
+  {
+    "dutch": "nu",
+    "english": "now"
+  },
+  {
+    "dutch": "nee",
+    "english": "no"
+  },
+  {
+    "dutch": "uit",
+    "english": "1. out of, from; 2. [ik kom ~ Groot-brittannië] I come from Great Britain"
+  },
+  {
+    "dutch": "ook",
+    "english": "1. also, too, as well; 2. [ik ~ ] me too"
+  },
+  {
+    "dutch": "over",
+    "english": "1. over, about; 2. [om kwart ~ zeven] at quarter past seven; 3. left, remaining"
+  },
+  {
+    "dutch": "doen",
+    "english": "to do"
+  },
+  {
+    "dutch": "gaan",
+    "english": "to go"
+  },
+  {
+    "dutch": "daar",
+    "english": "(over) there"
+  },
+  {
+    "dutch": "zou",
+    "english": "(I/you/he) would"
+  },
+  {
+    "dutch": "bij",
+    "english": "at/by/with"
+  },
+  {
+    "dutch": "al",
+    "english": "all, already"
+  },
+  {
+    "dutch": "of",
+    "english": "or, whether"
+  },
+  {
+    "dutch": "jullie",
+    "english": "you (plural informal)"
+  },
+  {
+    "dutch": "ons",
+    "english": "us"
+  },
+  {
+    "dutch": "iets",
+    "english": "something"
+  },
+  {
+    "dutch": "hebt",
+    "english": "1. (you) have (informal); 2. [je ~ gelijk] you're right"
+  },
+  {
+    "dutch": "waarom",
+    "english": "why"
+  },
+  {
+    "dutch": "had",
+    "english": "(I/you/he) had"
+  },
+  {
+    "dutch": "meer",
+    "english": "more"
+  },
+  {
+    "dutch": "laat",
+    "english": "1. late; 2. [hoe ~?] what time?"
+  },
+  {
+    "dutch": "doe",
+    "english": "(I) do"
+  },
+  {
+    "dutch": "wie",
+    "english": "who"
+  },
+  {
+    "dutch": "moeten",
+    "english": "to have to"
+  },
+  {
+    "dutch": "deze",
+    "english": "this (m/f); these"
+  },
+  {
+    "dutch": "kunnen",
+    "english": "to be able to (can)"
+  },
+  {
+    "dutch": "jou",
+    "english": "you (singular, informal)"
+  },
+  {
+    "dutch": "echt",
+    "english": "really; real"
+  },
+  {
+    "dutch": "denk",
+    "english": "(I) think"
+  },
+  {
+    "dutch": "zien",
+    "english": "to see"
+  },
+  {
+    "dutch": "de weg",
+    "english": "the road, way, path"
+  },
+  {
+    "dutch": "weg",
+    "english": "lost, away, gone"
+  },
+  {
+    "dutch": "nou",
+    "english": "well (interjection)"
+  },
+  {
+    "dutch": "alleen",
+    "english": "only; alone"
+  },
+  {
+    "dutch": "nooit",
+    "english": "never"
+  },
+  {
+    "dutch": "dus",
+    "english": "thus, so, therefore"
+  },
+  {
+    "dutch": "eens",
+    "english": "1. agreed, in agreement; 2. once; 3. [~ in de week] once a week; 4. one day, some day; 5. (emphatic use) just"
+  },
+  {
+    "dutch": "weer",
+    "english": "again"
+  },
+  {
+    "dutch": "tot",
+    "english": "until"
+  },
+  {
+    "dutch": "uw",
+    "english": "your (formal)"
+  },
+  {
+    "dutch": "mensen",
+    "english": "people"
+  },
+  {
+    "dutch": "onze",
+    "english": "our"
+  },
+  {
+    "dutch": "tegen",
+    "english": "against"
+  },
+  {
+    "dutch": "af",
+    "english": "off"
+  },
+  {
+    "dutch": "omdat",
+    "english": "because"
+  },
+  {
+    "dutch": "de vrouw",
+    "english": "the woman, wife"
+  },
+  {
+    "dutch": "allemaal",
+    "english": "altogether"
+  },
+  {
+    "dutch": "het geld",
+    "english": "the money"
+  },
+  {
+    "dutch": "zitten",
+    "english": "to sit"
+  },
+  {
+    "dutch": "jouw",
+    "english": "your(s)"
+  },
+  {
+    "dutch": "niemand",
+    "english": "nobody"
+  },
+  {
+    "dutch": "zich",
+    "english": "themselves"
+  },
+  {
+    "dutch": "beter",
+    "english": "better"
+  },
+  {
+    "dutch": "vast",
+    "english": "firm, fixed"
+  },
+  {
+    "dutch": "genoeg",
+    "english": "enough"
+  },
+  {
+    "dutch": "na",
+    "english": "after (time)"
+  },
+  {
+    "dutch": "toe",
+    "english": "shut, closed"
+  },
+  {
+    "dutch": "natuurlijk",
+    "english": "naturally"
+  },
+  {
+    "dutch": "de god",
+    "english": "the god"
+  },
+  {
+    "dutch": "sorry",
+    "english": "sorry"
+  },
+  {
+    "dutch": "alle",
+    "english": "all"
+  },
+  {
+    "dutch": "blijven",
+    "english": "to stay"
+  },
+  {
+    "dutch": "dingen",
+    "english": "things"
+  },
+  {
+    "dutch": "houden",
+    "english": "to hold"
+  },
+  {
+    "dutch": "de vriend",
+    "english": "the friend"
+  },
+  {
+    "dutch": "bang",
+    "english": "afraid"
+  },
+  {
+    "dutch": "kinderen",
+    "english": "children"
+  },
+  {
+    "dutch": "vertellen",
+    "english": "to tell, narrate"
+  },
+  {
+    "dutch": "de auto",
+    "english": "the car"
+  },
+  {
+    "dutch": "vragen",
+    "english": "to ask"
+  },
+  {
+    "dutch": "zelf",
+    "english": "self"
+  },
+  {
+    "dutch": "de jongen",
+    "english": "the boy"
+  },
+  {
+    "dutch": "het paar",
+    "english": "the couple, pair"
+  },
+  {
+    "dutch": "verdomme",
+    "english": "damn it!"
+  },
+  {
+    "dutch": "zorgen voor",
+    "english": "to look after"
+  },
+  {
+    "dutch": "thuis",
+    "english": "at home"
+  },
+  {
+    "dutch": "laatst",
+    "english": "1. last; 2. [voor het ~] the last time"
+  },
+  {
+    "dutch": "zelfs",
+    "english": "even (contrary to expectations)"
+  },
+  {
+    "dutch": "denken",
+    "english": "to think"
+  },
+  {
+    "dutch": "vandaag",
+    "english": "1. today; 2. [~ de dag] nowadays, these days"
+  },
+  {
+    "dutch": "halen",
+    "english": "to get, to bring"
+  },
+  {
+    "dutch": "eerst",
+    "english": "first"
+  },
+  {
+    "dutch": "de man",
+    "english": "the man, husband"
+  },
+  {
+    "dutch": "even",
+    "english": "1. shortly, briefly; 2. [~ na zeven] shortly after seven, just after seven"
+  },
+  {
+    "dutch": "terug",
+    "english": "back, backward, aback, again"
+  },
+  {
+    "dutch": "komt",
+    "english": "(you) come"
+  },
+  {
+    "dutch": "misschien",
+    "english": "perhaps, maybe"
+  },
+  {
+    "dutch": "laten",
+    "english": "to allow"
+  },
+  {
+    "dutch": "niets",
+    "english": "nothing"
+  },
+  {
+    "dutch": "zei",
+    "english": "(I/you/he) said"
+  },
+  {
+    "dutch": "iemand",
+    "english": "someone, anyone"
+  },
+  {
+    "dutch": "hou van",
+    "english": "(I) love"
+  },
+  {
+    "dutch": "veel",
+    "english": "much"
+  },
+  {
+    "dutch": "komen",
+    "english": "to come"
+  },
+  {
+    "dutch": "zeg",
+    "english": "(I) say"
+  },
+  {
+    "dutch": "toen",
+    "english": "then, when, back then"
+  },
+  {
+    "dutch": "zeggen",
+    "english": "to say"
+  },
+  {
+    "dutch": "worden",
+    "english": "to become"
+  },
+  {
+    "dutch": "zit",
+    "english": "(I) sit"
+  },
+  {
+    "dutch": "mag",
+    "english": "(I) may"
+  },
+  {
+    "dutch": "kijk",
+    "english": "(I) look, watch"
+  },
+  {
+    "dutch": "leven",
+    "english": "to live"
+  },
+  {
+    "dutch": "heel",
+    "english": "1. very (adverb); 2. whole, entire (adjective)"
+  },
+  {
+    "dutch": "nodig",
+    "english": "necessary, needful"
+  },
+  {
+    "dutch": "wordt",
+    "english": "(he) becomes"
+  },
+  {
+    "dutch": "gewoon",
+    "english": "ordinary"
+  },
+  {
+    "dutch": "twee",
+    "english": "two"
+  },
+  {
+    "dutch": "net",
+    "english": "1. just, recently; 2. just, only"
+  },
+  {
+    "dutch": "dood",
+    "english": "dead"
+  },
+  {
+    "dutch": "altijd",
+    "english": "always"
+  },
+  {
+    "dutch": "weten",
+    "english": "to know (facts)"
+  },
+  {
+    "dutch": "wij",
+    "english": "we"
+  },
+  {
+    "dutch": "maken",
+    "english": "to make"
+  },
+  {
+    "dutch": "gedaan",
+    "english": "(have) done"
+  },
+  {
+    "dutch": "geef",
+    "english": "(I) give, (I) teach"
+  },
+  {
+    "dutch": "zeker",
+    "english": "certainly"
+  },
+  {
+    "dutch": "zie",
+    "english": "(I) see"
+  },
+  {
+    "dutch": "de dag",
+    "english": "the day"
+  },
+  {
+    "dutch": "doet",
+    "english": "(he) does"
+  },
+  {
+    "dutch": "wacht",
+    "english": "(you) wait"
+  },
+  {
+    "dutch": "niks",
+    "english": "nothing"
+  },
+  {
+    "dutch": "kunt",
+    "english": "(you) can"
+  },
+  {
+    "dutch": "het huis",
+    "english": "the house"
+  },
+  {
+    "dutch": "de vader",
+    "english": "the father, the dad"
+  },
+  {
+    "dutch": "dacht",
+    "english": "(I/you/he) thought"
+  },
+  {
+    "dutch": "anders",
+    "english": "differently, else"
+  },
+  {
+    "dutch": "wilt",
+    "english": "(you) want"
+  },
+  {
+    "dutch": "de dank",
+    "english": "the thank(s)"
+  },
+  {
+    "dutch": "het jaar",
+    "english": "the year"
+  },
+  {
+    "dutch": "hun",
+    "english": "their"
+  },
+  {
+    "dutch": "willen",
+    "english": "to want"
+  },
+  {
+    "dutch": "erg",
+    "english": "1. bad; 2. very"
+  },
+  {
+    "dutch": "de keer",
+    "english": "1. the time, instance; 2. [nog een ~] again"
+  },
+  {
+    "dutch": "zoals",
+    "english": "like, such as"
+  },
+  {
+    "dutch": "iedereen",
+    "english": "everybody, everyone, anybody, anyone"
+  },
+  {
+    "dutch": "gezien",
+    "english": "(have) seen"
+  },
+  {
+    "dutch": "vind",
+    "english": "(I) find, think"
+  },
+  {
+    "dutch": "het werk",
+    "english": "the work"
+  },
+  {
+    "dutch": "binnen",
+    "english": "inside"
+  },
+  {
+    "dutch": "bedankt",
+    "english": "1. thanks; 2. [en ~ voor je hulp] and thanks for your help"
+  },
+  {
+    "dutch": "de spijt",
+    "english": "the regret"
+  },
+  {
+    "dutch": "even… als",
+    "english": "1. as... as; 2. [hij is ~ oud ~ ik] he is as old as me"
+  },
+  {
+    "dutch": "de winter",
+    "english": "the winter"
+  },
+  {
+    "dutch": "rustig",
+    "english": "calm"
+  },
+  {
+    "dutch": "wou",
+    "english": "(I/you/he) wanted"
+  },
+  {
+    "dutch": "de hoop",
+    "english": "the hope"
+  },
+  {
+    "dutch": "samen",
+    "english": "together"
+  },
+  {
+    "dutch": "neem",
+    "english": "(I) take"
+  },
+  {
+    "dutch": "de staat",
+    "english": "the state"
+  },
+  {
+    "dutch": "de moeder",
+    "english": "the mother, mum, mom"
+  },
+  {
+    "dutch": "zullen",
+    "english": "(infinitive, plural form) shall, will"
+  },
+  {
+    "dutch": "waren",
+    "english": "(we/you/they) were"
+  },
+  {
+    "dutch": "maak",
+    "english": "(I) make"
+  },
+  {
+    "dutch": "praten",
+    "english": "to talk"
+  },
+  {
+    "dutch": "mooi",
+    "english": "pretty, beautiful"
+  },
+  {
+    "dutch": "de lente",
+    "english": "the spring (season)"
+  },
+  {
+    "dutch": "vinden",
+    "english": "to find, think"
+  },
+  {
+    "dutch": "lang",
+    "english": "tall"
+  },
+  {
+    "dutch": "leuk",
+    "english": "cool, funny, nice"
+  },
+  {
+    "dutch": "graag",
+    "english": "gladly"
+  },
+  {
+    "dutch": "helpen",
+    "english": "to help"
+  },
+  {
+    "dutch": "zegt",
+    "english": "(he) says"
+  },
+  {
+    "dutch": "elkaar",
+    "english": "each other"
+  },
+  {
+    "dutch": "ziet",
+    "english": "(you) see"
+  },
+  {
+    "dutch": "blijf",
+    "english": "(I) stay"
+  },
+  {
+    "dutch": "klaar",
+    "english": "ready, finished"
+  },
+  {
+    "dutch": "bedoel",
+    "english": "(I) mean, intend"
+  },
+  {
+    "dutch": "hallo",
+    "english": "hello"
+  },
+  {
+    "dutch": "helemaal",
+    "english": "completely, absolutely, entirely"
+  },
+  {
+    "dutch": "maakt",
+    "english": "(you) make"
+  },
+  {
+    "dutch": "gek",
+    "english": "mad, silly"
+  },
+  {
+    "dutch": "luister",
+    "english": "(I) listen"
+  },
+  {
+    "dutch": "drie",
+    "english": "three"
+  },
+  {
+    "dutch": "geweest",
+    "english": "(have) been"
+  },
+  {
+    "dutch": "meneer",
+    "english": "1. Mr.; mister; 2. [~ Smeltink, wilt u hier plaatsnemen?] Mr Smeltink, please take a seat"
+  },
+  {
+    "dutch": "werd",
+    "english": "(I/you/he) became"
+  },
+  {
+    "dutch": "zonder",
+    "english": "without"
+  },
+  {
+    "dutch": "hoor",
+    "english": "(I) hear"
+  },
+  {
+    "dutch": "alsjeblieft",
+    "english": "please (informal)"
+  },
+  {
+    "dutch": "krijgen",
+    "english": "to get, receive, have"
+  },
+  {
+    "dutch": "kijken",
+    "english": "to look"
+  },
+  {
+    "dutch": "het idee",
+    "english": "the idea"
+  },
+  {
+    "dutch": "steeds",
+    "english": "constantly"
+  },
+  {
+    "dutch": "geven",
+    "english": "to give"
+  },
+  {
+    "dutch": "achter",
+    "english": "behind"
+  },
+  {
+    "dutch": "de naam",
+    "english": "the name"
+  },
+  {
+    "dutch": "ooit",
+    "english": "ever, someday"
+  },
+  {
+    "dutch": "moest",
+    "english": "(I/you/he) had to"
+  },
+  {
+    "dutch": "snel",
+    "english": "fast, quick"
+  },
+  {
+    "dutch": "onder",
+    "english": "under"
+  },
+  {
+    "dutch": "wanneer",
+    "english": "when"
+  },
+  {
+    "dutch": "het beetje",
+    "english": "the bit, the little bit"
+  },
+  {
+    "dutch": "gebeurd",
+    "english": "(has) happened"
+  },
+  {
+    "dutch": "eten",
+    "english": "to eat"
+  },
+  {
+    "dutch": "de vraag",
+    "english": "the question"
+  },
+  {
+    "dutch": "ken",
+    "english": "(I) know, am acquainted with"
+  },
+  {
+    "dutch": "kun",
+    "english": "(you) can"
+  },
+  {
+    "dutch": "lijkt",
+    "english": "(he) seems, resembles"
+  },
+  {
+    "dutch": "morgen",
+    "english": "tomorrow"
+  },
+  {
+    "dutch": "staan",
+    "english": "to stand"
+  },
+  {
+    "dutch": "gezegd",
+    "english": "(have) said"
+  },
+  {
+    "dutch": "heen",
+    "english": "1. away, gone; 2. on the way there, out; 3. [~ of weer] forth and back, forwards and backwards"
+  },
+  {
+    "dutch": "het geloof",
+    "english": "the faith, belief"
+  },
+  {
+    "dutch": "geweldig",
+    "english": "1. fantastic, awesome; 2. tremendous, huge"
+  },
+  {
+    "dutch": "de wereld",
+    "english": "the world"
+  },
+  {
+    "dutch": "nemen",
+    "english": "to take"
+  },
+  {
+    "dutch": "hadden",
+    "english": "(we/you/they) had"
+  },
+  {
+    "dutch": "jongens",
+    "english": "the boys"
+  },
+  {
+    "dutch": "meisjes",
+    "english": "the girls"
+  },
+  {
+    "dutch": "mannen",
+    "english": "the men"
+  },
+  {
+    "dutch": "vertel",
+    "english": "(I) tell, narrate"
+  },
+  {
+    "dutch": "denkt",
+    "english": "(you) think"
+  },
+  {
+    "dutch": "krijg",
+    "english": "(I) get, receive, have"
+  },
+  {
+    "dutch": "buiten",
+    "english": "out, outside"
+  },
+  {
+    "dutch": "eigen",
+    "english": "own"
+  },
+  {
+    "dutch": "want",
+    "english": "because"
+  },
+  {
+    "dutch": "deed",
+    "english": "(I/you/he) did"
+  },
+  {
+    "dutch": "zag",
+    "english": "(I/you/he) saw"
+  },
+  {
+    "dutch": "kwam",
+    "english": "(I/you/he) came"
+  },
+  {
+    "dutch": "ging",
+    "english": "(I/you/he) went"
+  },
+  {
+    "dutch": "wist",
+    "english": "(I/you/he) knew"
+  },
+  {
+    "dutch": "zij",
+    "english": "she, they"
+  },
+  {
+    "dutch": "wilde",
+    "english": "(I/you/he) wanted"
+  },
+  {
+    "dutch": "horen",
+    "english": "to hear"
+  },
+  {
+    "dutch": "soms",
+    "english": "sometimes"
+  },
+  {
+    "dutch": "geleden",
+    "english": "1. ago; 2. [elf jaar ~] eleven years ago"
+  },
+  {
+    "dutch": "elk",
+    "english": "each"
+  },
+  {
+    "dutch": "vanavond",
+    "english": "this evening"
+  },
+  {
+    "dutch": "het pak",
+    "english": "the suit"
+  },
+  {
+    "dutch": "eigenlijk",
+    "english": "actually"
+  },
+  {
+    "dutch": "de familie",
+    "english": "the family"
+  },
+  {
+    "dutch": "het uur",
+    "english": "the hour"
+  },
+  {
+    "dutch": "de zoon",
+    "english": "the son"
+  },
+  {
+    "dutch": "de politie",
+    "english": "the police"
+  },
+  {
+    "dutch": "houdt",
+    "english": "(you) hold, keep, love"
+  },
+  {
+    "dutch": "het probleem",
+    "english": "the problem"
+  },
+  {
+    "dutch": "heet",
+    "english": "1. hot; 2. (I/you/he) am named"
+  },
+  {
+    "dutch": "gevonden",
+    "english": "(have) found"
+  },
+  {
+    "dutch": "open",
+    "english": "open"
+  },
+  {
+    "dutch": "vermoord",
+    "english": "murdered, assassinated"
+  },
+  {
+    "dutch": "bijna",
+    "english": "almost"
+  },
+  {
+    "dutch": "het kind",
+    "english": "the child"
+  },
+  {
+    "dutch": "vrienden",
+    "english": "friends"
+  },
+  {
+    "dutch": "geeft",
+    "english": "(you) give, teach"
+  },
+  {
+    "dutch": "zouden",
+    "english": "(we/you/they) would"
+  },
+  {
+    "dutch": "gelijk",
+    "english": "equal"
+  },
+  {
+    "dutch": "hen",
+    "english": "them"
+  },
+  {
+    "dutch": "gebeurt",
+    "english": "happens"
+  },
+  {
+    "dutch": "oh",
+    "english": "oh"
+  },
+  {
+    "dutch": "pas",
+    "english": "1. just, recently; 2. [een ~getrouwd stel] a newly married couple"
+  },
+  {
+    "dutch": "krijgt",
+    "english": "(you) get, receive, have"
+  },
+  {
+    "dutch": "precies",
+    "english": "precisely"
+  },
+  {
+    "dutch": "begrijp",
+    "english": "(I) understand"
+  },
+  {
+    "dutch": "wachten",
+    "english": "to wait"
+  },
+  {
+    "dutch": "verder",
+    "english": "further"
+  },
+  {
+    "dutch": "voel",
+    "english": "(I) feel"
+  },
+  {
+    "dutch": "gehad",
+    "english": "(have) had"
+  },
+  {
+    "dutch": "zet",
+    "english": "(I/you/he) move, put"
+  },
+  {
+    "dutch": "alsof",
+    "english": "1. as if; 2. [doen ~] to pretend"
+  },
+  {
+    "dutch": "de kant",
+    "english": "the side"
+  },
+  {
+    "dutch": "bel",
+    "english": "1. (I) phone, call, ring; I'm calling, ringing, phoning"
+  },
+  {
+    "dutch": "volgens",
+    "english": "according to"
+  },
+  {
+    "dutch": "werken",
+    "english": "to work"
+  },
+  {
+    "dutch": "best",
+    "english": "best"
+  },
+  {
+    "dutch": "daarom",
+    "english": "1. therefore, that's why; 2. around it"
+  },
+  {
+    "dutch": "haal",
+    "english": "(I) get, fetch"
+  },
+  {
+    "dutch": "zat",
+    "english": "(I/you/he) sat"
+  },
+  {
+    "dutch": "dagen",
+    "english": "days"
+  },
+  {
+    "dutch": "prima",
+    "english": "excellent"
+  },
+  {
+    "dutch": "de pijn",
+    "english": "the pain"
+  },
+  {
+    "dutch": "jezelf",
+    "english": "yourself"
+  },
+  {
+    "dutch": "welk",
+    "english": "which"
+  },
+  {
+    "dutch": "vindt",
+    "english": "(you) find, think"
+  },
+  {
+    "dutch": "vroeg",
+    "english": "early"
+  },
+  {
+    "dutch": "gehoord",
+    "english": "(have) heard"
+  },
+  {
+    "dutch": "probeer",
+    "english": "(I) try"
+  },
+  {
+    "dutch": "volgend",
+    "english": "following, next"
+  },
+  {
+    "dutch": "eruit",
+    "english": "out (of it)"
+  },
+  {
+    "dutch": "word",
+    "english": "(I) am, become"
+  },
+  {
+    "dutch": "hoeveel",
+    "english": "how much/many"
+  },
+  {
+    "dutch": "het ding",
+    "english": "the thing, object"
+  },
+  {
+    "dutch": "schiet",
+    "english": "(I) shoot"
+  },
+  {
+    "dutch": "vijf",
+    "english": "five"
+  },
+  {
+    "dutch": "spreken",
+    "english": "to speak"
+  },
+  {
+    "dutch": "help",
+    "english": "(I) help"
+  },
+  {
+    "dutch": "gemaakt",
+    "english": "(have) made"
+  },
+  {
+    "dutch": "blij",
+    "english": "1. glad, happy, pleased; 2. [ik ben ~ om je te zien] I am glad to see you"
+  },
+  {
+    "dutch": "ligt",
+    "english": "(he/she) lies (down)"
+  },
+  {
+    "dutch": "lekker",
+    "english": "tasty, nice, fun, delicious"
+  },
+  {
+    "dutch": "de kamer",
+    "english": "1. the room, office; 2. chamber (parliamentary body)"
+  },
+  {
+    "dutch": "het hoofd",
+    "english": "the head (part of body)"
+  },
+  {
+    "dutch": "zoeken",
+    "english": "to look for"
+  },
+  {
+    "dutch": "de stad",
+    "english": "the city, town"
+  },
+  {
+    "dutch": "werkt",
+    "english": "(you) work, (he) works"
+  },
+  {
+    "dutch": "geloven",
+    "english": "to believe"
+  },
+  {
+    "dutch": "slecht",
+    "english": "bad"
+  },
+  {
+    "dutch": "blijft",
+    "english": "(he) stays, remains"
+  },
+  {
+    "dutch": "de kans",
+    "english": "the chance"
+  },
+  {
+    "dutch": "de schat",
+    "english": "the treasure"
+  },
+  {
+    "dutch": "ogen",
+    "english": "eyes"
+  },
+  {
+    "dutch": "verteld",
+    "english": "(have) told, narrated"
+  },
+  {
+    "dutch": "de manier",
+    "english": "the way, manner"
+  },
+  {
+    "dutch": "ergens",
+    "english": "somewhere"
+  },
+  {
+    "dutch": "het moment",
+    "english": "1. the moment; 2. [op hetzelfde ~] at the same time"
+  },
+  {
+    "dutch": "kent",
+    "english": "(you) know, are acquainted with (a person)"
+  },
+  {
+    "dutch": "breng",
+    "english": "(I) bring"
+  },
+  {
+    "dutch": "tussen",
+    "english": "between, among"
+  },
+  {
+    "dutch": "brengen",
+    "english": "to bring"
+  },
+  {
+    "dutch": "het land",
+    "english": "the land, country"
+  },
+  {
+    "dutch": "de zaak",
+    "english": "1. the thing, object; 2. affair, matter; 3. business, shop"
+  },
+  {
+    "dutch": "sta",
+    "english": "(I) stand"
+  },
+  {
+    "dutch": "bellen",
+    "english": "to call, ring, phone"
+  },
+  {
+    "dutch": "proberen",
+    "english": "to try"
+  },
+  {
+    "dutch": "mis",
+    "english": "wrong, off target"
+  },
+  {
+    "dutch": "doden",
+    "english": "to kill, murder"
+  },
+  {
+    "dutch": "spelen",
+    "english": "to play"
+  },
+  {
+    "dutch": "de deur",
+    "english": "the door"
+  },
+  {
+    "dutch": "de school",
+    "english": "the school"
+  },
+  {
+    "dutch": "minuten",
+    "english": "minutes"
+  },
+  {
+    "dutch": "vrouwen",
+    "english": "women"
+  },
+  {
+    "dutch": "de broer",
+    "english": "the brother (sibling, friar)"
+  },
+  {
+    "dutch": "boven",
+    "english": "above, upstairs"
+  },
+  {
+    "dutch": "het water",
+    "english": "the water"
+  },
+  {
+    "dutch": "de dokter",
+    "english": "the doctor"
+  },
+  {
+    "dutch": "vier",
+    "english": "four"
+  },
+  {
+    "dutch": "praat",
+    "english": "(I) talk"
+  },
+  {
+    "dutch": "het bed",
+    "english": "the bed"
+  },
+  {
+    "dutch": "de hulp",
+    "english": "1. the help; 2. [en bedankt voor je ~] and thanks for your help"
+  },
+  {
+    "dutch": "klopt",
+    "english": "(that's) true, (that's) right"
+  },
+  {
+    "dutch": "groot",
+    "english": "big"
+  },
+  {
+    "dutch": "juist",
+    "english": "true, right, precise, exactly"
+  },
+  {
+    "dutch": "de week",
+    "english": "1. the week; 2. [om de ~] every other week, every two weeks"
+  },
+  {
+    "dutch": "de dollar",
+    "english": "the dollar"
+  },
+  {
+    "dutch": "zoveel",
+    "english": "so many"
+  },
+  {
+    "dutch": "vrij",
+    "english": "free (as in freedom), vacant"
+  },
+  {
+    "dutch": "problemen",
+    "english": "problems"
+  },
+  {
+    "dutch": "vergeten",
+    "english": "to forget"
+  },
+  {
+    "dutch": "vooruit",
+    "english": "forward"
+  },
+  {
+    "dutch": "de kop",
+    "english": "the cup, headline, head (part of body)"
+  },
+  {
+    "dutch": "betekent",
+    "english": "(you/he) 1. mean, signify, stand for; 2. matter, is important"
+  },
+  {
+    "dutch": "hoeft",
+    "english": "(you) need to, (he) needs to"
+  },
+  {
+    "dutch": "de herfst",
+    "english": "the autumn, fall"
+  },
+  {
+    "dutch": "de papa",
+    "english": "the dad, daddy"
+  },
+  {
+    "dutch": "de/het soort",
+    "english": "the sort, kind, variety, type"
+  },
+  {
+    "dutch": "lopen",
+    "english": "to walk; to run"
+  },
+  {
+    "dutch": "zult",
+    "english": "(you) shall"
+  },
+  {
+    "dutch": "de dochter",
+    "english": "the daughter"
+  },
+  {
+    "dutch": "de zorg",
+    "english": "the care, anxiety, trouble, worry, charge, regard"
+  },
+  {
+    "dutch": "meteen",
+    "english": "1. immediately, at once; 2. [~ daarop] immediately afterwards"
+  },
+  {
+    "dutch": "ervan",
+    "english": "from it/them"
+  },
+  {
+    "dutch": "beginnen",
+    "english": "to begin"
+  },
+  {
+    "dutch": "gebruiken",
+    "english": "to use"
+  },
+  {
+    "dutch": "het stel",
+    "english": "1. the couple, pair; 2. set, group, collection; 3. [een pasgetrouwd ~] a newly married couple"
+  },
+  {
+    "dutch": "handen",
+    "english": "hands"
+  },
+  {
+    "dutch": "de klootzak",
+    "english": "the asshole"
+  },
+  {
+    "dutch": "de liefde",
+    "english": "the love"
+  },
+  {
+    "dutch": "tien",
+    "english": "ten"
+  },
+  {
+    "dutch": "voorbij",
+    "english": "beyond, further, passed by"
+  },
+  {
+    "dutch": "de nacht",
+    "english": "the night"
+  },
+  {
+    "dutch": "het verhaal",
+    "english": "the story"
+  },
+  {
+    "dutch": "zodat",
+    "english": "so that"
+  },
+  {
+    "dutch": "wakker",
+    "english": "awake"
+  },
+  {
+    "dutch": "vergeet",
+    "english": "(I/you/he) forget"
+  },
+  {
+    "dutch": "gebeuren",
+    "english": "to happen, to occur"
+  },
+  {
+    "dutch": "sinds",
+    "english": "since"
+  },
+  {
+    "dutch": "bezig",
+    "english": "busy"
+  },
+  {
+    "dutch": "hetzelfde",
+    "english": "the same (het)"
+  },
+  {
+    "dutch": "drinken",
+    "english": "to drink"
+  },
+  {
+    "dutch": "ander",
+    "english": "other"
+  },
+  {
+    "dutch": "beneden",
+    "english": "below, downstairs, beneath"
+  },
+  {
+    "dutch": "mevrouw",
+    "english": "Mrs."
+  },
+  {
+    "dutch": "de plaats",
+    "english": "1. the place; 2. space; 3. seat; 4. town"
+  },
+  {
+    "dutch": "leren",
+    "english": "to learn"
+  },
+  {
+    "dutch": "alstublieft",
+    "english": "please (formal)"
+  },
+  {
+    "dutch": "slapen",
+    "english": "to sleep"
+  },
+  {
+    "dutch": "zoiets",
+    "english": "something (like), anything (like)"
+  },
+  {
+    "dutch": "vol",
+    "english": "full"
+  },
+  {
+    "dutch": "moeilijk",
+    "english": "difficult"
+  },
+  {
+    "dutch": "druk",
+    "english": "busy, bustling, crowded"
+  },
+  {
+    "dutch": "de mama",
+    "english": "the mum, mom, mummy"
+  },
+  {
+    "dutch": "gekomen",
+    "english": "(has) come"
+  },
+  {
+    "dutch": "gelukkig",
+    "english": "lucky, fortunate, happy"
+  },
+  {
+    "dutch": "het nummer",
+    "english": "the number"
+  },
+  {
+    "dutch": "mogen",
+    "english": "to be allowed, may"
+  },
+  {
+    "dutch": "de hand",
+    "english": "the hand"
+  },
+  {
+    "dutch": "zes",
+    "english": "six"
+  },
+  {
+    "dutch": "zoek",
+    "english": "(I) search, look for"
+  },
+  {
+    "dutch": "fijn",
+    "english": "fine, great"
+  },
+  {
+    "dutch": "voordat",
+    "english": "prior to"
+  },
+  {
+    "dutch": "hoort",
+    "english": "(you) hear, (he) hears"
+  },
+  {
+    "dutch": "het hart",
+    "english": "the heart"
+  },
+  {
+    "dutch": "klein",
+    "english": "small"
+  },
+  {
+    "dutch": "vermoorden",
+    "english": "to murder, assassinate"
+  },
+  {
+    "dutch": "liggen",
+    "english": "to lie (down)"
+  },
+  {
+    "dutch": "stoppen",
+    "english": "to stop"
+  },
+  {
+    "dutch": "straks",
+    "english": "later, soon"
+  },
+  {
+    "dutch": "het begin",
+    "english": "the beginning"
+  },
+  {
+    "dutch": "aardig",
+    "english": "pleasant; nice, kind"
+  },
+  {
+    "dutch": "eerder",
+    "english": "1. earlier; 2. before, preceding; 3. [enkele jaren ~] a few years previously"
+  },
+  {
+    "dutch": "de vent",
+    "english": "the fellow, guy, bloke, chap"
+  },
+  {
+    "dutch": "de waarheid",
+    "english": "the truth"
+  },
+  {
+    "dutch": "neer",
+    "english": "down"
+  },
+  {
+    "dutch": "de agent",
+    "english": "1. the policeman; 2. the agent (e.g. secret agent)"
+  },
+  {
+    "dutch": "zaken",
+    "english": "1. things, matters, issues; 2. business; 3. [een ~man] a businessman"
+  },
+  {
+    "dutch": "het bloed",
+    "english": "the blood"
+  },
+  {
+    "dutch": "los",
+    "english": "loose, loosely, free"
+  },
+  {
+    "dutch": "het gezicht",
+    "english": "the face"
+  },
+  {
+    "dutch": "oud",
+    "english": "old"
+  },
+  {
+    "dutch": "dicht",
+    "english": "shut; close, near"
+  },
+  {
+    "dutch": "vond",
+    "english": "(I/you/he) found"
+  },
+  {
+    "dutch": "de wees",
+    "english": "the orphan"
+  },
+  {
+    "dutch": "later",
+    "english": "later"
+  },
+  {
+    "dutch": "gaf",
+    "english": "(I/you/he) gave"
+  },
+  {
+    "dutch": "vallen",
+    "english": "to fall"
+  },
+  {
+    "dutch": "de avond",
+    "english": "the evening"
+  },
+  {
+    "dutch": "eraan",
+    "english": "1. to it; 2. [ik kom ~] I'm on my way, I'm coming"
+  },
+  {
+    "dutch": "vaak",
+    "english": "frequently, regularly, often"
+  },
+  {
+    "dutch": "hoorde",
+    "english": "(I/you/he) heard"
+  },
+  {
+    "dutch": "de oorlog",
+    "english": "1. the war; 2. [tijdens de ~] during the war"
+  },
+  {
+    "dutch": "het meisje",
+    "english": "the girl"
+  },
+  {
+    "dutch": "de vijand",
+    "english": "the enemy, adversary"
+  },
+  {
+    "dutch": "raak",
+    "english": "(I) touch, hit home"
+  },
+  {
+    "dutch": "de haat",
+    "english": "the hate, hatred"
+  },
+  {
+    "dutch": "de plek",
+    "english": "1. the location, spot, place; 2. [blauwe ~] bruise"
+  },
+  {
+    "dutch": "kennen",
+    "english": "to know, be acquainted with"
+  },
+  {
+    "dutch": "sterven",
+    "english": "to die, to pass away"
+  },
+  {
+    "dutch": "mogelijk",
+    "english": "possible"
+  },
+  {
+    "dutch": "de vriendin",
+    "english": "the girlfriend; a female friend"
+  },
+  {
+    "dutch": "ouders",
+    "english": "parents"
+  },
+  {
+    "dutch": "liever",
+    "english": "preferably, rather, first"
+  },
+  {
+    "dutch": "overal",
+    "english": "everywhere"
+  },
+  {
+    "dutch": "heren",
+    "english": "gentlemen"
+  },
+  {
+    "dutch": "jaren",
+    "english": "years"
+  },
+  {
+    "dutch": "het geluk",
+    "english": "the happiness, bliss, luck"
+  },
+  {
+    "dutch": "vandaan",
+    "english": "1. from; 2. [waar kwam ze ~?] where did she come from?"
+  },
+  {
+    "dutch": "de fout",
+    "english": "the mistake, fault"
+  },
+  {
+    "dutch": "betalen",
+    "english": "to pay"
+  },
+  {
+    "dutch": "welkom",
+    "english": "welcome"
+  },
+  {
+    "dutch": "het nieuws",
+    "english": "the news"
+  },
+  {
+    "dutch": "hoi",
+    "english": "hi"
+  },
+  {
+    "dutch": "de schuld",
+    "english": "the debt"
+  },
+  {
+    "dutch": "begrepen",
+    "english": "(have) understood"
+  },
+  {
+    "dutch": "het stuk",
+    "english": "the piece"
+  },
+  {
+    "dutch": "de rest",
+    "english": "the rest"
+  },
+  {
+    "dutch": "veilig",
+    "english": "safe"
+  },
+  {
+    "dutch": "de buurt",
+    "english": "the neighborhood"
+  },
+  {
+    "dutch": "de film",
+    "english": "the movie"
+  },
+  {
+    "dutch": "maanden",
+    "english": "months"
+  },
+  {
+    "dutch": "redden",
+    "english": "to rescue"
+  },
+  {
+    "dutch": "terwijl",
+    "english": "while, whereas"
+  },
+  {
+    "dutch": "rond",
+    "english": "round"
+  },
+  {
+    "dutch": "eerlijk",
+    "english": "honest"
+  },
+  {
+    "dutch": "inderdaad",
+    "english": "indeed"
+  },
+  {
+    "dutch": "anderen",
+    "english": "others"
+  },
+  {
+    "dutch": "duidelijk",
+    "english": "clear, obvious"
+  },
+  {
+    "dutch": "langs",
+    "english": "along, past, down, by, out"
+  },
+  {
+    "dutch": "belangrijk",
+    "english": "important"
+  },
+  {
+    "dutch": "de hond",
+    "english": "the dog"
+  },
+  {
+    "dutch": "waarschijnlijk",
+    "english": "probably/likely"
+  },
+  {
+    "dutch": "de baas",
+    "english": "the boss"
+  },
+  {
+    "dutch": "de mond",
+    "english": "the mouth"
+  },
+  {
+    "dutch": "per",
+    "english": "per"
+  },
+  {
+    "dutch": "de reden",
+    "english": "the reason"
+  },
+  {
+    "dutch": "stil",
+    "english": "quiet"
+  },
+  {
+    "dutch": "hard",
+    "english": "hard, firm"
+  },
+  {
+    "dutch": "mezelf",
+    "english": "myself"
+  },
+  {
+    "dutch": "ermee",
+    "english": "with it"
+  },
+  {
+    "dutch": "klinkt",
+    "english": "(it) sounds"
+  },
+  {
+    "dutch": "stond",
+    "english": "(I/you/he) stood"
+  },
+  {
+    "dutch": "kreeg",
+    "english": "(I/you/he) got, received, had"
+  },
+  {
+    "dutch": "liet",
+    "english": "(I/you/he) allowed"
+  },
+  {
+    "dutch": "voelt",
+    "english": "(you) feel, (he) feels"
+  },
+  {
+    "dutch": "de baan",
+    "english": "the job"
+  },
+  {
+    "dutch": "de telefoon",
+    "english": "the phone"
+  },
+  {
+    "dutch": "hoezo",
+    "english": "What? How do you mean? In what way?"
+  },
+  {
+    "dutch": "noemen",
+    "english": "to name, to call"
+  },
+  {
+    "dutch": "niet alleen",
+    "english": "not only, not alone"
+  },
+  {
+    "dutch": "prachtig",
+    "english": "wonderful, splendid"
+  },
+  {
+    "dutch": "recht",
+    "english": "straight, direct"
+  },
+  {
+    "dutch": "erop",
+    "english": "1. on it, on them; 2. up it, up them; 3. [de dag ~] the day after, the following day"
+  },
+  {
+    "dutch": "kwaad",
+    "english": "1. furious, angry; 2. bad, wrong, evil"
+  },
+  {
+    "dutch": "de kapitein",
+    "english": "the captain"
+  },
+  {
+    "dutch": "de mam",
+    "english": "the mum, mom"
+  },
+  {
+    "dutch": "de pa",
+    "english": "the dad, pa"
+  },
+  {
+    "dutch": "neemt",
+    "english": "(you) take, (he) takes"
+  },
+  {
+    "dutch": "gegeven",
+    "english": "(have) given"
+  },
+  {
+    "dutch": "zetten",
+    "english": "to put"
+  },
+  {
+    "dutch": "de baby",
+    "english": "the baby"
+  },
+  {
+    "dutch": "het weer",
+    "english": "the weather"
+  },
+  {
+    "dutch": "dezelfde",
+    "english": "the same (de)"
+  },
+  {
+    "dutch": "het boek",
+    "english": "the book"
+  },
+  {
+    "dutch": "trouwen",
+    "english": "to marry"
+  },
+  {
+    "dutch": "één",
+    "english": "one (the number)"
+  },
+  {
+    "dutch": "rijden",
+    "english": "to drive"
+  },
+  {
+    "dutch": "zeer",
+    "english": "1. very, much, highly, greatly; 2. sore, painful"
+  },
+  {
+    "dutch": "weken",
+    "english": "weeks"
+  },
+  {
+    "dutch": "het lichaam",
+    "english": "the body"
+  },
+  {
+    "dutch": "voorzichtig",
+    "english": "cautious"
+  },
+  {
+    "dutch": "kwijt",
+    "english": "lost"
+  },
+  {
+    "dutch": "daarna",
+    "english": "after(wards), after that, next, then"
+  },
+  {
+    "dutch": "nergens",
+    "english": "nowhere"
+  },
+  {
+    "dutch": "erin",
+    "english": "in it"
+  },
+  {
+    "dutch": "de mens",
+    "english": "the person"
+  },
+  {
+    "dutch": "het plan",
+    "english": "the plan"
+  },
+  {
+    "dutch": "het deel",
+    "english": "the part, portion"
+  },
+  {
+    "dutch": "de winkel",
+    "english": "the shop, store"
+  },
+  {
+    "dutch": "het antwoord",
+    "english": "the answer"
+  },
+  {
+    "dutch": "de kerel",
+    "english": "the (big) guy, a (big) chap"
+  },
+  {
+    "dutch": "het schatje",
+    "english": "the dear, sweetheart, honey (not: \"de lieverd\" or \"het liefje\")"
+  },
+  {
+    "dutch": "de koning",
+    "english": "the king"
+  },
+  {
+    "dutch": "gebeld",
+    "english": "(have) called, phoned, rung"
+  },
+  {
+    "dutch": "ontmoet",
+    "english": "(I/you/he) meet, come across"
+  },
+  {
+    "dutch": "het wapen",
+    "english": "the weapon"
+  },
+  {
+    "dutch": "houd",
+    "english": "(I) hold, keep, love"
+  },
+  {
+    "dutch": "hield",
+    "english": "(I/you/he) held, kept, loved"
+  },
+  {
+    "dutch": "valt",
+    "english": "(you) fall, (he) falls"
+  },
+  {
+    "dutch": "geworden",
+    "english": "(has) become"
+  },
+  {
+    "dutch": "de moord",
+    "english": "the murder"
+  },
+  {
+    "dutch": "het geval",
+    "english": "the case, situation"
+  },
+  {
+    "dutch": "tijdens",
+    "english": "1. during; 2. [~ de oorlog] during the war"
+  },
+  {
+    "dutch": "allebei",
+    "english": "both"
+  },
+  {
+    "dutch": "de koffie",
+    "english": "the coffee"
+  },
+  {
+    "dutch": "veranderen",
+    "english": "to change, to alter"
+  },
+  {
+    "dutch": "het miljoen",
+    "english": "the million"
+  },
+  {
+    "dutch": "schieten",
+    "english": "to shoot"
+  },
+  {
+    "dutch": "dames",
+    "english": "ladies"
+  },
+  {
+    "dutch": "ver",
+    "english": "far"
+  },
+  {
+    "dutch": "de zus",
+    "english": "the sister"
+  },
+  {
+    "dutch": "verloren",
+    "english": "lost"
+  },
+  {
+    "dutch": "vechten",
+    "english": "to fight"
+  },
+  {
+    "dutch": "het plezier",
+    "english": "the pleasure, fun"
+  },
+  {
+    "dutch": "pakken",
+    "english": "to grab, take, catch, catch hold of"
+  },
+  {
+    "dutch": "loopt",
+    "english": "(you/he) walk/run"
+  },
+  {
+    "dutch": "nogal",
+    "english": "rather, quite; sufficiently; some"
+  },
+  {
+    "dutch": "de lieverd",
+    "english": "the dear, sweetheart, honey (not: \"het schatje\" or \"het liefje\")"
+  },
+  {
+    "dutch": "getrouwd",
+    "english": "married"
+  },
+  {
+    "dutch": "naartoe",
+    "english": "to, towards"
+  },
+  {
+    "dutch": "gisteren",
+    "english": "yesterday"
+  },
+  {
+    "dutch": "kopen",
+    "english": "to buy"
+  },
+  {
+    "dutch": "erbij",
+    "english": "there, at, with"
+  },
+  {
+    "dutch": "maakte",
+    "english": "(I/you/he) made"
+  },
+  {
+    "dutch": "tweede",
+    "english": "second (place)"
+  },
+  {
+    "dutch": "ziek",
+    "english": "sick"
+  },
+  {
+    "dutch": "het woord",
+    "english": "the word"
+  },
+  {
+    "dutch": "de president",
+    "english": "the president"
+  },
+  {
+    "dutch": "leg",
+    "english": "(I) lay"
+  },
+  {
+    "dutch": "grappig",
+    "english": "funny"
+  },
+  {
+    "dutch": "tot ziens",
+    "english": "see you, goodbye"
+  },
+  {
+    "dutch": "het gevoel",
+    "english": "the feeling"
+  },
+  {
+    "dutch": "gebruikt",
+    "english": "(have) used"
+  },
+  {
+    "dutch": "ontmoeten",
+    "english": "to meet"
+  },
+  {
+    "dutch": "vreemd",
+    "english": "foreign, strange"
+  },
+  {
+    "dutch": "de stap",
+    "english": "the step"
+  },
+  {
+    "dutch": "trek",
+    "english": "(I) pull, draw"
+  },
+  {
+    "dutch": "vertrouwen",
+    "english": "to trust"
+  },
+  {
+    "dutch": "de keuken",
+    "english": "the kitchen"
+  },
+  {
+    "dutch": "meer dan",
+    "english": "more than"
+  },
+  {
+    "dutch": "vroeger",
+    "english": "formerly, previously"
+  },
+  {
+    "dutch": "de pap",
+    "english": "the porridge"
+  },
+  {
+    "dutch": "eet",
+    "english": "(he) eats"
+  },
+  {
+    "dutch": "stuur",
+    "english": "(I) send, steer"
+  },
+  {
+    "dutch": "verkeerd",
+    "english": "wrong"
+  },
+  {
+    "dutch": "de slaap",
+    "english": "the sleep"
+  },
+  {
+    "dutch": "begrijpen",
+    "english": "to understand"
+  },
+  {
+    "dutch": "daarmee",
+    "english": "with/by that"
+  },
+  {
+    "dutch": "het kantoor",
+    "english": "the office"
+  },
+  {
+    "dutch": "goeie",
+    "english": "good"
+  },
+  {
+    "dutch": "begint",
+    "english": "(you) begin, (he) begins"
+  },
+  {
+    "dutch": "fantastisch",
+    "english": "fantastic"
+  },
+  {
+    "dutch": "ervoor",
+    "english": "1. in front of (it), in favor of (it), instead of (it); 2. before (time)"
+  },
+  {
+    "dutch": "verwacht",
+    "english": "(you) expect, (he) expects"
+  },
+  {
+    "dutch": "zomaar",
+    "english": "for no reason, out of the blue"
+  },
+  {
+    "dutch": "meen",
+    "english": "(I) 1. mean, intend; 2. think, am of the opinion"
+  },
+  {
+    "dutch": "gegaan",
+    "english": "(have) gone"
+  },
+  {
+    "dutch": "bedoelt",
+    "english": "(you/he) mean, intend"
+  },
+  {
+    "dutch": "pardon",
+    "english": "excuse me, sorry, pardon"
+  },
+  {
+    "dutch": "minder",
+    "english": "less, fewer"
+  },
+  {
+    "dutch": "normaal",
+    "english": "normal"
+  },
+  {
+    "dutch": "nieuw",
+    "english": "new"
+  },
+  {
+    "dutch": "zichzelf",
+    "english": "themselves"
+  },
+  {
+    "dutch": "de foto",
+    "english": "the photograph"
+  },
+  {
+    "dutch": "leeft",
+    "english": "(you) live, (he) lives"
+  },
+  {
+    "dutch": "loop",
+    "english": "(I) walk/run"
+  },
+  {
+    "dutch": "voelen",
+    "english": "to feel, to sense"
+  },
+  {
+    "dutch": "de idioot",
+    "english": "the idiot"
+  },
+  {
+    "dutch": "winnen",
+    "english": "to win / to beat"
+  },
+  {
+    "dutch": "eindelijk",
+    "english": "finally, at last"
+  },
+  {
+    "dutch": "men",
+    "english": "one, they, people"
+  },
+  {
+    "dutch": "val",
+    "english": "(I) fall"
+  },
+  {
+    "dutch": "in deze",
+    "english": "in this"
+  },
+  {
+    "dutch": "het schip",
+    "english": "the ship"
+  },
+  {
+    "dutch": "enkele",
+    "english": "1. a few, some; 2. [~ jaren eerder] a few years previously"
+  },
+  {
+    "dutch": "de meid",
+    "english": "the girl"
+  },
+  {
+    "dutch": "het team",
+    "english": "the team"
+  },
+  {
+    "dutch": "gevraagd",
+    "english": "(have) asked"
+  },
+  {
+    "dutch": "lief",
+    "english": "sweet, kind"
+  },
+  {
+    "dutch": "gesproken",
+    "english": "(have) spoken"
+  },
+  {
+    "dutch": "waard",
+    "english": "worth"
+  },
+  {
+    "dutch": "enkel",
+    "english": "1. only, just; 2. single, solitary"
+  },
+  {
+    "dutch": "beloof",
+    "english": "(I) promise"
+  },
+  {
+    "dutch": "woorden",
+    "english": "words"
+  },
+  {
+    "dutch": "het einde",
+    "english": "the end"
+  },
+  {
+    "dutch": "jawel",
+    "english": "yes indeed"
+  },
+  {
+    "dutch": "hierheen",
+    "english": "(over) here, hither, this way"
+  },
+  {
+    "dutch": "vreselijk",
+    "english": "horrible"
+  },
+  {
+    "dutch": "met rust",
+    "english": "alone, in peace"
+  },
+  {
+    "dutch": "dan ook",
+    "english": "therefore"
+  },
+  {
+    "dutch": "de hemel",
+    "english": "the heaven"
+  },
+  {
+    "dutch": "nam",
+    "english": "(I/you/he) took"
+  },
+  {
+    "dutch": "trots",
+    "english": "1. proud; 2. [ik ben ~ op je] I am proud of you"
+  },
+  {
+    "dutch": "spullen",
+    "english": "things, stuff"
+  },
+  {
+    "dutch": "gekregen",
+    "english": "(have) got, received, had"
+  },
+  {
+    "dutch": "het ziekenhuis",
+    "english": "the hospital"
+  },
+  {
+    "dutch": "het onderzoek",
+    "english": "1. the investigation, examination (police, medical); 2. research"
+  },
+  {
+    "dutch": "de oom",
+    "english": "the uncle"
+  },
+  {
+    "dutch": "verliefd",
+    "english": "in love"
+  },
+  {
+    "dutch": "of zo",
+    "english": "or so"
+  },
+  {
+    "dutch": "eentje",
+    "english": "alone, one of those"
+  },
+  {
+    "dutch": "perfect",
+    "english": "perfect"
+  },
+  {
+    "dutch": "langer",
+    "english": "longer"
+  },
+  {
+    "dutch": "stom",
+    "english": "1. dumb, mute; 2. stupid, dumb"
+  },
+  {
+    "dutch": "het succes",
+    "english": "the success"
+  },
+  {
+    "dutch": "de toekomst",
+    "english": "the future"
+  },
+  {
+    "dutch": "het pistool",
+    "english": "the pistol"
+  },
+  {
+    "dutch": "opnieuw",
+    "english": "once again"
+  },
+  {
+    "dutch": "slim",
+    "english": "clever"
+  },
+  {
+    "dutch": "de tijd",
+    "english": "the time"
+  },
+  {
+    "dutch": "acht",
+    "english": "eight"
+  },
+  {
+    "dutch": "de gang",
+    "english": "the hallway, corridor"
+  },
+  {
+    "dutch": "weinig",
+    "english": "few, little"
+  },
+  {
+    "dutch": "de grond",
+    "english": "the ground, floor"
+  },
+  {
+    "dutch": "wapens",
+    "english": "weapons"
+  },
+  {
+    "dutch": "de droom",
+    "english": "the dream"
+  },
+  {
+    "dutch": "herinner",
+    "english": "(I) remind, (I) remember"
+  },
+  {
+    "dutch": "brengt",
+    "english": "(you) bring, (he) brings"
+  },
+  {
+    "dutch": "nietwaar",
+    "english": "isn't it?"
+  },
+  {
+    "dutch": "het leger",
+    "english": "the army"
+  },
+  {
+    "dutch": "let",
+    "english": "pay attention to, mind"
+  },
+  {
+    "dutch": "lezen",
+    "english": "to read"
+  },
+  {
+    "dutch": "veranderd",
+    "english": "(have) changed"
+  },
+  {
+    "dutch": "wonen",
+    "english": "to reside, to live"
+  },
+  {
+    "dutch": "de muziek",
+    "english": "the music"
+  },
+  {
+    "dutch": "omhoog",
+    "english": "1. up, upwards, upstairs, on top; 2. on high; 3. above; 4. [handen ~!] hands up!"
+  },
+  {
+    "dutch": "stellen",
+    "english": "to put, set"
+  },
+  {
+    "dutch": "boos",
+    "english": "1. angry, cross; 2. evil, bad, wicked"
+  },
+  {
+    "dutch": "gebruik",
+    "english": "(I) use"
+  },
+  {
+    "dutch": "noem",
+    "english": "(I) call, (I) name"
+  },
+  {
+    "dutch": "konden",
+    "english": "(we/you/they) were able to, could"
+  },
+  {
+    "dutch": "de gevangenis",
+    "english": "the prison"
+  },
+  {
+    "dutch": "kleren",
+    "english": "clothes"
+  },
+  {
+    "dutch": "half",
+    "english": "half"
+  },
+  {
+    "dutch": "werden",
+    "english": "(we/you/they) became"
+  },
+  {
+    "dutch": "de informatie",
+    "english": "the information"
+  },
+  {
+    "dutch": "stomme",
+    "english": "1. dumb, mute; 2. stupid, dumb"
+  },
+  {
+    "dutch": "zwart",
+    "english": "black"
+  },
+  {
+    "dutch": "de heer",
+    "english": "the gentleman, lord"
+  },
+  {
+    "dutch": "licht",
+    "english": "light (in weight)"
+  },
+  {
+    "dutch": "zeven",
+    "english": "1. seven; 2. [om kwart voor ~] at quarter to seven"
+  },
+  {
+    "dutch": "hoef",
+    "english": "(I) need to"
+  },
+  {
+    "dutch": "makkelijk",
+    "english": "easy, simple, effortless"
+  },
+  {
+    "dutch": "gingen",
+    "english": "(we/you/they) went"
+  },
+  {
+    "dutch": "vraagt",
+    "english": "(you) ask, (he) asks"
+  },
+  {
+    "dutch": "dansen",
+    "english": "to dance"
+  },
+  {
+    "dutch": "de advocaat",
+    "english": "the lawyer"
+  },
+  {
+    "dutch": "lukt",
+    "english": "(you) succeed, (he) succeeds"
+  },
+  {
+    "dutch": "begrijpt",
+    "english": "(you) understand, (he) understands"
+  },
+  {
+    "dutch": "tenminste",
+    "english": "at least"
+  },
+  {
+    "dutch": "woont",
+    "english": "(you) live, (he) resides, lives"
+  },
+  {
+    "dutch": "wilden",
+    "english": "(we/you/they) wanted"
+  },
+  {
+    "dutch": "het bewijs",
+    "english": "the proof"
+  },
+  {
+    "dutch": "het geheim",
+    "english": "the secret, mystery"
+  },
+  {
+    "dutch": "het vuur",
+    "english": "the fire"
+  },
+  {
+    "dutch": "de straat",
+    "english": "the street"
+  },
+  {
+    "dutch": "luisteren naar",
+    "english": "to listen to"
+  },
+  {
+    "dutch": "volgen",
+    "english": "to follow"
+  },
+  {
+    "dutch": "de afspraak",
+    "english": "the appointment"
+  },
+  {
+    "dutch": "ieder",
+    "english": "every"
+  },
+  {
+    "dutch": "verlaten",
+    "english": "1. to leave (e.g. one's wife and children); 2. to abandon, to desert"
+  },
+  {
+    "dutch": "vertrekken",
+    "english": "to depart, to leave (a place)"
+  },
+  {
+    "dutch": "behalve",
+    "english": "1. except for, apart from; 2. in addition to"
+  },
+  {
+    "dutch": "spreek",
+    "english": "(I) speak"
+  },
+  {
+    "dutch": "foto's",
+    "english": "photos"
+  },
+  {
+    "dutch": "goedemorgen",
+    "english": "good morning"
+  },
+  {
+    "dutch": "het feest",
+    "english": "the party"
+  },
+  {
+    "dutch": "beschermen",
+    "english": "to protect, to safeguard, to guard, to ward off"
+  },
+  {
+    "dutch": "verliezen",
+    "english": "to lose"
+  },
+  {
+    "dutch": "kijkt",
+    "english": "(you) watch, (he) watches"
+  },
+  {
+    "dutch": "schrijven",
+    "english": "to write"
+  },
+  {
+    "dutch": "absoluut",
+    "english": "absolute, absolutely"
+  },
+  {
+    "dutch": "afgelopen",
+    "english": "1. finished, past, last; 2. stop it! that's enough!"
+  },
+  {
+    "dutch": "koud",
+    "english": "cold"
+  },
+  {
+    "dutch": "lijken",
+    "english": "to look, seem, appear"
+  },
+  {
+    "dutch": "trouwens",
+    "english": "by the way"
+  },
+  {
+    "dutch": "sterk",
+    "english": "strong, strongly"
+  },
+  {
+    "dutch": "het spel",
+    "english": "the game"
+  },
+  {
+    "dutch": "kwamen",
+    "english": "(we/you/they) came"
+  },
+  {
+    "dutch": "het ongeluk",
+    "english": "the accident"
+  },
+  {
+    "dutch": "probeerde",
+    "english": "(I/you/he) tried"
+  },
+  {
+    "dutch": "de seks",
+    "english": "the sex"
+  },
+  {
+    "dutch": "de aarde",
+    "english": "the earth, soil"
+  },
+  {
+    "dutch": "de kracht",
+    "english": "the force, power"
+  },
+  {
+    "dutch": "wegwezen",
+    "english": "to go away, to clear out"
+  },
+  {
+    "dutch": "ene",
+    "english": "one"
+  },
+  {
+    "dutch": "erover",
+    "english": "over it"
+  },
+  {
+    "dutch": "gestolen",
+    "english": "(have) stolen"
+  },
+  {
+    "dutch": "de zak",
+    "english": "the pocket, sack, bag"
+  },
+  {
+    "dutch": "het liefje",
+    "english": "the dear, sweetheart, honey (not: \"het schatje\" or \"de lieverd\")"
+  },
+  {
+    "dutch": "gedood",
+    "english": "(have) killed"
+  },
+  {
+    "dutch": "de boot",
+    "english": "the boat"
+  },
+  {
+    "dutch": "genomen",
+    "english": "(have) taken"
+  },
+  {
+    "dutch": "leek",
+    "english": "(I/you/he) seemed, resembled"
+  },
+  {
+    "dutch": "serieus",
+    "english": "serious"
+  },
+  {
+    "dutch": "slaan",
+    "english": "to slap, to hit"
+  },
+  {
+    "dutch": "sommige",
+    "english": "some"
+  },
+  {
+    "dutch": "naast",
+    "english": "next to"
+  },
+  {
+    "dutch": "sturen",
+    "english": "1. to control, to steer; 2. to send"
+  },
+  {
+    "dutch": "de honger",
+    "english": "the hunger"
+  },
+  {
+    "dutch": "gevaarlijk",
+    "english": "dangerous"
+  },
+  {
+    "dutch": "lieve",
+    "english": "nice, sweet, beloved"
+  },
+  {
+    "dutch": "de geest",
+    "english": "the ghost, spirit"
+  },
+  {
+    "dutch": "gered",
+    "english": "(have) rescued"
+  },
+  {
+    "dutch": "juiste",
+    "english": "right, correct, just"
+  },
+  {
+    "dutch": "de persoon",
+    "english": "the person"
+  },
+  {
+    "dutch": "de moordenaar",
+    "english": "the murderer, killer"
+  },
+  {
+    "dutch": "de maand",
+    "english": "the month"
+  },
+  {
+    "dutch": "helpt",
+    "english": "(you) help, (he) helps"
+  },
+  {
+    "dutch": "da's",
+    "english": "that's"
+  },
+  {
+    "dutch": "niet schelen",
+    "english": "to not care"
+  },
+  {
+    "dutch": "probeert",
+    "english": "(you) try, (he) tries"
+  },
+  {
+    "dutch": "degene",
+    "english": "the one who"
+  },
+  {
+    "dutch": "voelde",
+    "english": "(I/you/he) felt"
+  },
+  {
+    "dutch": "iemand te pakken krijgen",
+    "english": "to get hold of someone"
+  },
+  {
+    "dutch": "bestaat",
+    "english": "(you) exist, (you) are, (you) consist (of)"
+  },
+  {
+    "dutch": "de dienst",
+    "english": "the duty; service"
+  },
+  {
+    "dutch": "het contact",
+    "english": "the contact"
+  },
+  {
+    "dutch": "jammer",
+    "english": "too bad, pity"
+  },
+  {
+    "dutch": "begon",
+    "english": "(I/you/he) began, started"
+  },
+  {
+    "dutch": "het gevaar",
+    "english": "the danger"
+  },
+  {
+    "dutch": "voorstellen",
+    "english": "to introduce, to present"
+  },
+  {
+    "dutch": "slechts",
+    "english": "merely"
+  },
+  {
+    "dutch": "via",
+    "english": "via (loan word)"
+  },
+  {
+    "dutch": "rot",
+    "english": "rotten, putrid, carious"
+  },
+  {
+    "dutch": "de prijs",
+    "english": "the price"
+  },
+  {
+    "dutch": "de stem",
+    "english": "1. the voice; 2. the vote"
+  },
+  {
+    "dutch": "vooral",
+    "english": "1. especially, particularly"
+  },
+  {
+    "dutch": "de bank",
+    "english": "the bank"
+  },
+  {
+    "dutch": "geboren",
+    "english": "born"
+  },
+  {
+    "dutch": "missen",
+    "english": "to miss"
+  },
+  {
+    "dutch": "jong",
+    "english": "young"
+  },
+  {
+    "dutch": "de rij",
+    "english": "1. the line, row, queue; 2. series"
+  },
+  {
+    "dutch": "ongeveer",
+    "english": "approximately, about"
+  },
+  {
+    "dutch": "verkopen",
+    "english": "to sell"
+  },
+  {
+    "dutch": "begonnen",
+    "english": "(have) begun"
+  },
+  {
+    "dutch": "de reis",
+    "english": "the trip, journey, travels"
+  },
+  {
+    "dutch": "grootste",
+    "english": "biggest"
+  },
+  {
+    "dutch": "moe",
+    "english": "tired"
+  },
+  {
+    "dutch": "het vliegtuig",
+    "english": "the airplane"
+  },
+  {
+    "dutch": "bekend",
+    "english": "well-known"
+  },
+  {
+    "dutch": "de lucht",
+    "english": "1. the air; 2. sky; 3. smell, scent"
+  },
+  {
+    "dutch": "bewijzen",
+    "english": "to prove"
+  },
+  {
+    "dutch": "zolang",
+    "english": "as long as"
+  },
+  {
+    "dutch": "lachen",
+    "english": "to laugh"
+  },
+  {
+    "dutch": "leuke",
+    "english": "1. nice; 2. funny, amusing, entertaining"
+  },
+  {
+    "dutch": "het hotel",
+    "english": "the hotel"
+  },
+  {
+    "dutch": "excuseer",
+    "english": "excuse me"
+  },
+  {
+    "dutch": "betaald",
+    "english": "(have) paid"
+  },
+  {
+    "dutch": "speelt",
+    "english": "(you) play, (he) plays"
+  },
+  {
+    "dutch": "vorige",
+    "english": "1. last, previous; 2. earlier, former; 3. [de ~ keer] the last time; 4. [haar ~ man] her ex-husband"
+  },
+  {
+    "dutch": "schuldig",
+    "english": "guilty"
+  },
+  {
+    "dutch": "zodra",
+    "english": "as soon as, as ever, once"
+  },
+  {
+    "dutch": "verkeerde",
+    "english": "wrong, distorted"
+  },
+  {
+    "dutch": "verdomde",
+    "english": "damned, damn (informal)"
+  },
+  {
+    "dutch": "op zoek",
+    "english": "looking for"
+  },
+  {
+    "dutch": "lange",
+    "english": "long, tall"
+  },
+  {
+    "dutch": "erger",
+    "english": "worse"
+  },
+  {
+    "dutch": "vliegen",
+    "english": "to fly"
+  },
+  {
+    "dutch": "de generaal",
+    "english": "the general"
+  },
+  {
+    "dutch": "gedacht",
+    "english": "(have) thought"
+  },
+  {
+    "dutch": "arme",
+    "english": "poor"
+  },
+  {
+    "dutch": "geleerd",
+    "english": "(have) learned"
+  },
+  {
+    "dutch": "moesten",
+    "english": "(we/you/they) had to"
+  },
+  {
+    "dutch": "de lul",
+    "english": "(slang) the penis"
+  },
+  {
+    "dutch": "vertrouw",
+    "english": "(I) trust"
+  },
+  {
+    "dutch": "raar",
+    "english": "strange, odd, peculiar, weird"
+  },
+  {
+    "dutch": "lag",
+    "english": "(I/you/he) laid, lay"
+  },
+  {
+    "dutch": "viel",
+    "english": "(I/you/he) fell"
+  },
+  {
+    "dutch": "de tafel",
+    "english": "the table"
+  },
+  {
+    "dutch": "de sla",
+    "english": "the lettuce"
+  },
+  {
+    "dutch": "gefeliciteerd",
+    "english": "congratulations"
+  },
+  {
+    "dutch": "de hel",
+    "english": "the hell"
+  },
+  {
+    "dutch": "de macht",
+    "english": "the power, might"
+  },
+  {
+    "dutch": "regels",
+    "english": "rules"
+  },
+  {
+    "dutch": "het paard",
+    "english": "the horse"
+  },
+  {
+    "dutch": "kapot",
+    "english": "broken"
+  },
+  {
+    "dutch": "dragen",
+    "english": "to carry , to wear"
+  },
+  {
+    "dutch": "geprobeerd",
+    "english": "(have) tried"
+  },
+  {
+    "dutch": "de ziel",
+    "english": "the soul"
+  },
+  {
+    "dutch": "gelooft",
+    "english": "(you) believe, (he) believes"
+  },
+  {
+    "dutch": "kende",
+    "english": "(I/you/he) knew (someone)"
+  },
+  {
+    "dutch": "de dame",
+    "english": "the lady"
+  },
+  {
+    "dutch": "de raad",
+    "english": "1. the advice, guidance; 2. council, board"
+  },
+  {
+    "dutch": "drugs",
+    "english": "drugs"
+  },
+  {
+    "dutch": "hé",
+    "english": "hey!"
+  },
+  {
+    "dutch": "vanwege",
+    "english": "because of, due to, on account of"
+  },
+  {
+    "dutch": "geraakt",
+    "english": "offended, touched, moved"
+  },
+  {
+    "dutch": "Amerika",
+    "english": "America"
+  },
+  {
+    "dutch": "de rug",
+    "english": "the back (body part)"
+  },
+  {
+    "dutch": "het gezin",
+    "english": "the immediate family"
+  },
+  {
+    "dutch": "raken",
+    "english": "to hit, to touch, to make contact with"
+  },
+  {
+    "dutch": "totdat",
+    "english": "till, until, as far as"
+  },
+  {
+    "dutch": "dromen",
+    "english": "to dream"
+  },
+  {
+    "dutch": "wagen",
+    "english": "to dare, venture, risk, be bold"
+  },
+  {
+    "dutch": "de ruimte",
+    "english": "1. the space, room; 2. outer space"
+  },
+  {
+    "dutch": "tenzij",
+    "english": "unless, save"
+  },
+  {
+    "dutch": "derde",
+    "english": "third"
+  },
+  {
+    "dutch": "herinneren",
+    "english": "to remind, to remember"
+  },
+  {
+    "dutch": "teken",
+    "english": "(I) sign"
+  },
+  {
+    "dutch": "kwalijk",
+    "english": "bad"
+  },
+  {
+    "dutch": "trekken",
+    "english": "to pull"
+  },
+  {
+    "dutch": "de kolonel",
+    "english": "the colonel"
+  },
+  {
+    "dutch": "zwaar",
+    "english": "1. heavy; 2. difficult"
+  },
+  {
+    "dutch": "gisteravond",
+    "english": "yesterday evening, last night"
+  },
+  {
+    "dutch": "de sleutel",
+    "english": "the key"
+  },
+  {
+    "dutch": "de bal",
+    "english": "the ball"
+  },
+  {
+    "dutch": "de kost",
+    "english": "1. the cost, expense; 2. living; 3. food"
+  },
+  {
+    "dutch": "de kerk",
+    "english": "the church"
+  },
+  {
+    "dutch": "zweer",
+    "english": "(I) swear"
+  },
+  {
+    "dutch": "de band",
+    "english": "the band, tyre, bond"
+  },
+  {
+    "dutch": "arm",
+    "english": "arm, poor"
+  },
+  {
+    "dutch": "rijk",
+    "english": "rich"
+  },
+  {
+    "dutch": "het beste",
+    "english": "the best"
+  },
+  {
+    "dutch": "jonge",
+    "english": "young"
+  },
+  {
+    "dutch": "daarvoor",
+    "english": "1. for that purpose; that's why; 2. before, ahead, previously; 3. for it, instead"
+  },
+  {
+    "dutch": "dom",
+    "english": "1. stupid, dumb; 2. ignorant, uninformed"
+  },
+  {
+    "dutch": "de regel",
+    "english": "the rule"
+  },
+  {
+    "dutch": "zover",
+    "english": "so far, so far as"
+  },
+  {
+    "dutch": "nadat",
+    "english": "after, after which"
+  },
+  {
+    "dutch": "komaan",
+    "english": "c'mon, now"
+  },
+  {
+    "dutch": "het grapje",
+    "english": "the joke"
+  },
+  {
+    "dutch": "namen",
+    "english": "(we/you/they) took"
+  },
+  {
+    "dutch": "tuurlijk",
+    "english": "of course (from natuurlijk)"
+  },
+  {
+    "dutch": "vertelt",
+    "english": "(you) tell, narrate; (he) tells, narrates"
+  },
+  {
+    "dutch": "geweldige",
+    "english": "1. fantastic, awesome; 2. tremendous, huge"
+  },
+  {
+    "dutch": "het doel",
+    "english": "the aim, purpose, goal, target"
+  },
+  {
+    "dutch": "stierf",
+    "english": "(I/you/he) died"
+  },
+  {
+    "dutch": "ter",
+    "english": "to, in, at"
+  },
+  {
+    "dutch": "de meter",
+    "english": "the meter"
+  },
+  {
+    "dutch": "zoekt",
+    "english": "(you) look for, (he) looks for"
+  },
+  {
+    "dutch": "te weten",
+    "english": "namely"
+  },
+  {
+    "dutch": "de relatie",
+    "english": "the relation"
+  },
+  {
+    "dutch": "gedachten",
+    "english": "thoughts, ideas"
+  },
+  {
+    "dutch": "de rust",
+    "english": "the rest, relaxation, peace and quiet"
+  },
+  {
+    "dutch": "de ouwe",
+    "english": "(the) man, guy, dude (\"thanks, man!\")"
+  },
+  {
+    "dutch": "gestuurd",
+    "english": "(have) sent"
+  },
+  {
+    "dutch": "de groep",
+    "english": "the group"
+  },
+  {
+    "dutch": "de eer",
+    "english": "the honour"
+  },
+  {
+    "dutch": "gemist",
+    "english": "(have) missed"
+  },
+  {
+    "dutch": "zeiden",
+    "english": "(we/you/they) said"
+  },
+  {
+    "dutch": "het lijk",
+    "english": "the corpse"
+  },
+  {
+    "dutch": "keek",
+    "english": "(I/you/he) watched"
+  },
+  {
+    "dutch": "werkte",
+    "english": "(I/you/he) worked"
+  },
+  {
+    "dutch": "belde",
+    "english": "(I/you/he) called, rang, phoned"
+  },
+  {
+    "dutch": "dronken",
+    "english": "drunk"
+  },
+  {
+    "dutch": "de punt",
+    "english": "the dot, point, period, full stop"
+  },
+  {
+    "dutch": "de trein",
+    "english": "the train"
+  },
+  {
+    "dutch": "rennen",
+    "english": "to run"
+  },
+  {
+    "dutch": "onmogelijk",
+    "english": "impossible"
+  },
+  {
+    "dutch": "de oma",
+    "english": "the grandmother"
+  },
+  {
+    "dutch": "de wedstrijd",
+    "english": "the competition, race, match"
+  },
+  {
+    "dutch": "het volk",
+    "english": "the people"
+  },
+  {
+    "dutch": "welterusten",
+    "english": "sleep well! good night!"
+  },
+  {
+    "dutch": "Amerikaans",
+    "english": "American"
+  },
+  {
+    "dutch": "het raam",
+    "english": "the window"
+  },
+  {
+    "dutch": "vannacht",
+    "english": "tonight"
+  },
+  {
+    "dutch": "zulke",
+    "english": "such"
+  },
+  {
+    "dutch": "helaas",
+    "english": "unfortunately"
+  },
+  {
+    "dutch": "de angst",
+    "english": "the fear, dread"
+  },
+  {
+    "dutch": "diep",
+    "english": "deep"
+  },
+  {
+    "dutch": "heerlijk",
+    "english": "1. delightful, divine; 2. delicious"
+  },
+  {
+    "dutch": "de brief",
+    "english": "the letter (i.e. what you post or write to someone)"
+  },
+  {
+    "dutch": "sneller",
+    "english": "faster"
+  },
+  {
+    "dutch": "vanuit",
+    "english": "1. from, out of; 2. [ik bel ~ hotel Svea] I'm calling from Hotel Svea"
+  },
+  {
+    "dutch": "regelen",
+    "english": "to organise, to arrange"
+  },
+  {
+    "dutch": "spreekt",
+    "english": "(you) speak, (he) speaks"
+  },
+  {
+    "dutch": "gelezen",
+    "english": "(have) read"
+  },
+  {
+    "dutch": "de zuster",
+    "english": "the sister"
+  },
+  {
+    "dutch": "liep",
+    "english": "(I/you/he) walked"
+  },
+  {
+    "dutch": "schoenen",
+    "english": "shoes"
+  },
+  {
+    "dutch": "warm",
+    "english": "warm"
+  },
+  {
+    "dutch": "de situatie",
+    "english": "the situation"
+  },
+  {
+    "dutch": "de seconde",
+    "english": "the second (unit of time)"
+  },
+  {
+    "dutch": "drink",
+    "english": "(I) drink"
+  },
+  {
+    "dutch": "de neus",
+    "english": "the nose"
+  },
+  {
+    "dutch": "kalm",
+    "english": "calm, peaceful"
+  },
+  {
+    "dutch": "uitleggen",
+    "english": "to explain"
+  },
+  {
+    "dutch": "delen",
+    "english": "1. to divide, to separate into parts; 2. to share, to participate, to partake"
+  },
+  {
+    "dutch": "het gebouw",
+    "english": "the building"
+  },
+  {
+    "dutch": "geschreven",
+    "english": "(have) written"
+  },
+  {
+    "dutch": "ach",
+    "english": "oh, ah, aha"
+  },
+  {
+    "dutch": "direct",
+    "english": "directly"
+  },
+  {
+    "dutch": "de maat",
+    "english": "the size, measure"
+  },
+  {
+    "dutch": "leggen",
+    "english": "to lay"
+  },
+  {
+    "dutch": "de lijn",
+    "english": "the line, rope, route"
+  },
+  {
+    "dutch": "de zon",
+    "english": "the sun"
+  },
+  {
+    "dutch": "de moeite",
+    "english": "the effort, trouble"
+  },
+  {
+    "dutch": "links",
+    "english": "1. left (direction); 2. left-handed; 3. left wing, socialist, leftist"
+  },
+  {
+    "dutch": "het verleden",
+    "english": "the past"
+  },
+  {
+    "dutch": "het oog",
+    "english": "the eye"
+  },
+  {
+    "dutch": "de wet",
+    "english": "the law"
+  },
+  {
+    "dutch": "duurt",
+    "english": "(it) lasts"
+  },
+  {
+    "dutch": "het huwelijk",
+    "english": "the marriage"
+  },
+  {
+    "dutch": "gebracht",
+    "english": "(have) brought"
+  },
+  {
+    "dutch": "de kaart",
+    "english": "1. the card, (e.g. credit card); 2. menu; 3. ticket; 4. map, chart"
+  },
+  {
+    "dutch": "volg",
+    "english": "(I) follow"
+  },
+  {
+    "dutch": "gooi",
+    "english": "(I) throw"
+  },
+  {
+    "dutch": "de kont",
+    "english": "(informal) the bottom, behind, bum"
+  },
+  {
+    "dutch": "deden",
+    "english": "(we/you/they) did"
+  },
+  {
+    "dutch": "het bedrijf",
+    "english": "the business"
+  },
+  {
+    "dutch": "waarvoor",
+    "english": "what for, why"
+  },
+  {
+    "dutch": "haast",
+    "english": "1. almost, nearly; 2. hardly"
+  },
+  {
+    "dutch": "gewonnen",
+    "english": "(have) won"
+  },
+  {
+    "dutch": "vanaf",
+    "english": "1. from, away from, as from; 2. [~ de jaren zestig] from the (19)60s onwards, starting in the '60s"
+  },
+  {
+    "dutch": "het blad",
+    "english": "1. the (news)paper, magazine; 2. paper, sheet, page; 3. leaf, petal"
+  },
+  {
+    "dutch": "het laken",
+    "english": "1. the (bed)sheet; 2. tablecloth"
+  },
+  {
+    "dutch": "negen",
+    "english": "nine"
+  },
+  {
+    "dutch": "elf",
+    "english": "eleven"
+  },
+  {
+    "dutch": "twaalf",
+    "english": "twelve"
+  },
+  {
+    "dutch": "maandag",
+    "english": "Monday"
+  },
+  {
+    "dutch": "dinsdag",
+    "english": "Tuesday"
+  },
+  {
+    "dutch": "woensdag",
+    "english": "Wednesday"
+  },
+  {
+    "dutch": "donderdag",
+    "english": "Thursday"
+  },
+  {
+    "dutch": "vrijdag",
+    "english": "Friday"
+  },
+  {
+    "dutch": "zaterdag",
+    "english": "Saturday"
+  },
+  {
+    "dutch": "zondag",
+    "english": "Sunday"
+  },
+  {
+    "dutch": "rood",
+    "english": "red"
+  },
+  {
+    "dutch": "blauw",
+    "english": "blue"
+  },
+  {
+    "dutch": "groen",
+    "english": "green"
+  },
+  {
+    "dutch": "geel",
+    "english": "yellow"
+  },
+  {
+    "dutch": "wit",
+    "english": "white"
+  }
+]

@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "dutch-flashcards-native",
+    "name": "Dutch Flashcards",
     "slug": "dutch-flashcards-native",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.pedropinto.dutchflashcards"
     },
     "android": {
       "adaptiveIcon": {
@@ -20,6 +21,18 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-font"
+    ]
   }
 }
