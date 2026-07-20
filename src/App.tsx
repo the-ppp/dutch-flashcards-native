@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import words from './data/nl.json'
+import nlData from './data/nl.json'
 import { shuffledIndices } from './lib/shuffledIndices'
 import { colors } from './theme/colors'
 import { CardStage, CardSnapshot, SlideTransition } from './components/CardStage'
@@ -11,6 +11,8 @@ import { SettingsButton } from './components/SettingsButton'
 import { Controls } from './components/Controls'
 import { PracticeSettingsModal } from './components/PracticeSettingsModal'
 import { ResultsModal } from './components/ResultsModal'
+
+const words = nlData.words
 
 type Direction = 'nl-en' | 'en-nl'
 type Judgment = 'correct' | 'wrong'
@@ -30,8 +32,8 @@ export default function App() {
 
   const wordIndex = order[pos]
   const card = words[wordIndex]
-  const front = direction === 'nl-en' ? card.dutch : card.english
-  const back = direction === 'nl-en' ? card.english : card.dutch
+  const front = direction === 'nl-en' ? card.targetWord : card.englishWord
+  const back = direction === 'nl-en' ? card.englishWord : card.targetWord
   const frontLabel = direction === 'nl-en' ? 'Dutch' : 'English'
   const backLabel = direction === 'nl-en' ? 'English' : 'Dutch'
 
