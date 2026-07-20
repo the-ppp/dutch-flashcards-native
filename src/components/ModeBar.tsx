@@ -1,26 +1,30 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native'
 import { colors } from '../theme/colors'
 import { fonts } from '../theme/typography'
+import { FLAGS, GbFlag } from './Flags'
 
-type Direction = 'nl-en' | 'en-nl'
+export type Direction = 'target-en' | 'en-target'
 
 type ModeBarProps = {
   direction: Direction
+  languageCode: string
+  languageName: string
   onToggleDirection: () => void
 }
 
-export function ModeBar({ direction, onToggleDirection }: ModeBarProps) {
+export function ModeBar({ direction, languageCode, languageName, onToggleDirection }: ModeBarProps) {
+  const TargetFlag = FLAGS[languageCode]
   const label =
-    direction === 'nl-en'
-      ? 'Switch to English to Dutch'
-      : 'Switch to Dutch to English'
+    direction === 'target-en'
+      ? `Switch to English to ${languageName}`
+      : `Switch to ${languageName} to English`
 
   return (
     <Pressable onPress={onToggleDirection} style={styles.pill} accessibilityLabel={label}>
       <View accessible={false} style={styles.row}>
-        <Text style={styles.flag}>{direction === 'nl-en' ? '🇳🇱' : '🇬🇧'}</Text>
+        {direction === 'target-en' ? <TargetFlag /> : <GbFlag />}
         <Text style={styles.arrow}>→</Text>
-        <Text style={styles.flag}>{direction === 'nl-en' ? '🇬🇧' : '🇳🇱'}</Text>
+        {direction === 'target-en' ? <GbFlag /> : <TargetFlag />}
       </View>
     </Pressable>
   )
@@ -40,9 +44,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 6,
-  },
-  flag: {
-    fontSize: 14,
   },
   arrow: {
     fontSize: 12,

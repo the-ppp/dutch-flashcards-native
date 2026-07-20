@@ -14,7 +14,7 @@ import { ResultsModal } from './components/ResultsModal'
 
 const words = nlData.words
 
-type Direction = 'nl-en' | 'en-nl'
+type Direction = 'target-en' | 'en-target'
 type Judgment = 'correct' | 'wrong'
 
 export default function App() {
@@ -25,17 +25,17 @@ export default function App() {
   const [pos, setPos] = useState(0)
   const [flipped, setFlipped] = useState(false)
   const [slideTransition, setSlideTransition] = useState<SlideTransition>(null)
-  const [direction, setDirection] = useState<Direction>('nl-en')
+  const [direction, setDirection] = useState<Direction>('target-en')
   const [settingsOpen, setSettingsOpen] = useState(false)
   const [results, setResults] = useState<(Judgment | null)[]>(() => Array(order.length).fill(null))
   const [showResults, setShowResults] = useState(false)
 
   const wordIndex = order[pos]
   const card = words[wordIndex]
-  const front = direction === 'nl-en' ? card.targetWord : card.englishWord
-  const back = direction === 'nl-en' ? card.englishWord : card.targetWord
-  const frontLabel = direction === 'nl-en' ? 'Dutch' : 'English'
-  const backLabel = direction === 'nl-en' ? 'English' : 'Dutch'
+  const front = direction === 'target-en' ? card.targetWord : card.englishWord
+  const back = direction === 'target-en' ? card.englishWord : card.targetWord
+  const frontLabel = direction === 'target-en' ? 'Dutch' : 'English'
+  const backLabel = direction === 'target-en' ? 'English' : 'Dutch'
 
   const correctCount = results.filter((r) => r === 'correct').length
   const wrongCount = results.filter((r) => r === 'wrong').length
@@ -75,7 +75,7 @@ export default function App() {
   }
 
   function toggleDirection() {
-    setDirection((d) => (d === 'nl-en' ? 'en-nl' : 'nl-en'))
+    setDirection((d) => (d === 'target-en' ? 'en-target' : 'target-en'))
     setFlipped(false)
   }
 
@@ -126,7 +126,12 @@ export default function App() {
 
       <View style={styles.body}>
         <View style={styles.header}>
-          <ModeBar direction={direction} onToggleDirection={toggleDirection} />
+          <ModeBar
+            direction={direction}
+            languageCode="nl"
+            languageName="Dutch"
+            onToggleDirection={toggleDirection}
+          />
           <SettingsButton onPress={() => setSettingsOpen(true)} />
         </View>
 
