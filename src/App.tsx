@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import words from './data/words.json'
+import words from './data/nl.json'
 import { shuffledIndices } from './lib/shuffledIndices'
 import { colors } from './theme/colors'
 import { CardStage, CardSnapshot, SlideTransition } from './components/CardStage'
