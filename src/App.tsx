@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import nlData from './data/nl.json'
+import { getLanguage } from './data/languages'
 import { shuffledIndices } from './lib/shuffledIndices'
 import { colors } from './theme/colors'
 import { CardStage, CardSnapshot, SlideTransition } from './components/CardStage'
@@ -12,7 +12,8 @@ import { Controls } from './components/Controls'
 import { PracticeSettingsModal } from './components/PracticeSettingsModal'
 import { ResultsModal } from './components/ResultsModal'
 
-const words = nlData.words
+const language = getLanguage('nl')!
+const words = language.words
 
 type Direction = 'target-en' | 'en-target'
 type Judgment = 'correct' | 'wrong'
@@ -34,8 +35,8 @@ export default function App() {
   const card = words[wordIndex]
   const front = direction === 'target-en' ? card.targetWord : card.englishWord
   const back = direction === 'target-en' ? card.englishWord : card.targetWord
-  const frontLabel = direction === 'target-en' ? 'Dutch' : 'English'
-  const backLabel = direction === 'target-en' ? 'English' : 'Dutch'
+  const frontLabel = direction === 'target-en' ? language.name : 'English'
+  const backLabel = direction === 'target-en' ? 'English' : language.name
 
   const correctCount = results.filter((r) => r === 'correct').length
   const wrongCount = results.filter((r) => r === 'wrong').length
@@ -128,8 +129,8 @@ export default function App() {
         <View style={styles.header}>
           <ModeBar
             direction={direction}
-            languageCode="nl"
-            languageName="Dutch"
+            languageCode={language.code}
+            languageName={language.name}
             onToggleDirection={toggleDirection}
           />
           <SettingsButton onPress={() => setSettingsOpen(true)} />
