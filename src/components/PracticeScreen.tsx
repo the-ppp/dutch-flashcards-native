@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { Pressable, StyleSheet, View } from 'react-native'
+import Svg, { Path } from 'react-native-svg'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Language } from '../data/languages'
 import { shuffledIndices } from '../lib/shuffledIndices'
@@ -11,13 +12,20 @@ import { SettingsButton } from './SettingsButton'
 import { Controls } from './Controls'
 import { PracticeSettingsModal } from './PracticeSettingsModal'
 import { ResultsModal } from './ResultsModal'
-import { FLAGS } from './Flags'
 
 type Judgment = 'correct' | 'wrong'
 
 type PracticeScreenProps = {
   language: Language
   onChangeLanguage: () => void
+}
+
+function BackArrowIcon({ color }: { color: string }) {
+  return (
+    <Svg width={18} height={18} viewBox="0 0 24 24">
+      <Path d="M15 5 L8 12 L15 19" stroke={color} strokeWidth={3.5} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+    </Svg>
+  )
 }
 
 export function PracticeScreen({ language, onChangeLanguage }: PracticeScreenProps) {
@@ -121,7 +129,6 @@ export function PracticeScreen({ language, onChangeLanguage }: PracticeScreenPro
   }
 
   const current: CardSnapshot = { front, back, frontLabel, backLabel, number: pos + 1, flipped }
-  const ChangeLanguageFlag = FLAGS[language.code]
 
   return (
     <View style={styles.root}>
@@ -141,9 +148,9 @@ export function PracticeScreen({ language, onChangeLanguage }: PracticeScreenPro
             <Pressable
               onPress={onChangeLanguage}
               style={styles.changeLanguageButton}
-              accessibilityLabel="Change language"
+              accessibilityLabel="Back to language selection"
             >
-              <ChangeLanguageFlag />
+              <BackArrowIcon color={colors.muted} />
             </Pressable>
             <SettingsButton onPress={() => setSettingsOpen(true)} />
           </View>
