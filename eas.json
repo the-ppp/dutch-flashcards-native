@@ -1,0 +1,29 @@
+{
+  "cli": {
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "ios": {
+        "image": "latest",
+        "simulator": true,
+        "buildConfiguration": "Debug"
+      }
+    },
+    "preview": {
+      "ios": {
+        "image": "latest",
+        "buildConfiguration": "Release"
+      }
+    },
+    "production": {
+      "ios": {
+        "image": "latest",
+        "buildConfiguration": "Release"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
