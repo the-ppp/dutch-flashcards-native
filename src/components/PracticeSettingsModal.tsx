@@ -27,8 +27,11 @@ export function PracticeSettingsModal({ totalWords, currentSize, onConfirm, onCl
             <Text style={styles.closeGlyph}>✕</Text>
           </Pressable>
 
-          <Text style={styles.sizeValue}>{size}</Text>
-          <Text style={styles.sizeLabel}>words</Text>
+          <Text style={styles.heading}>I just want to practice</Text>
+          <Text style={styles.sizeRow}>
+            <Text style={styles.sizeValue}>{size}</Text>
+            <Text style={styles.sizeLabel}> words</Text>
+          </Text>
 
           <Slider
             style={styles.slider}
@@ -88,6 +91,16 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: colors.muted,
   },
+  heading: {
+    fontSize: 20,
+    fontFamily: fonts.bold,
+    color: colors.ink,
+    marginTop: 2,
+    marginBottom: 0,
+  },
+  sizeRow: {
+    marginTop: 4,
+  },
   sizeValue: {
     fontSize: 48,
     fontFamily: fonts.extraBold,
@@ -95,12 +108,12 @@ const styles = StyleSheet.create({
     fontVariant: ['tabular-nums'],
   },
   sizeLabel: {
-    fontSize: 14,
-    fontFamily: fonts.semiBold,
-    color: colors.muted,
+    fontSize: 20,
+    fontFamily: fonts.bold,
+    color: colors.ink,
   },
   slider: {
-    marginTop: 24,
+    marginTop: 6,
     width: '100%',
   },
   confirmButton: {

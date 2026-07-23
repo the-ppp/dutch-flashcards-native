@@ -4,6 +4,7 @@ import Svg, { Path } from 'react-native-svg'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Language } from '../data/languages'
 import { shuffledIndices } from '../lib/shuffledIndices'
+import { GameProgress, Judgment, clearGameProgress, saveGameProgress } from '../lib/gameProgress'
 import { colors } from '../theme/colors'
 import { CardStage, CardSnapshot, SlideTransition } from './CardStage'
 import { ProgressBar } from './ProgressBar'
@@ -13,11 +14,11 @@ import { Controls } from './Controls'
 import { PracticeSettingsModal } from './PracticeSettingsModal'
 import { ResultsModal } from './ResultsModal'
 
-type Judgment = 'correct' | 'wrong'
-
 type PracticeScreenProps = {
   language: Language
   onChangeLanguage: () => void
+  resume?: GameProgress
+  onProgressChange: (progress: GameProgress | null) => void
 }
 
 function BackArrowIcon({ color }: { color: string }) {
@@ -28,19 +29,23 @@ function BackArrowIcon({ color }: { color: string }) {
   )
 }
 
-export function PracticeScreen({ language, onChangeLanguage }: PracticeScreenProps) {
+export function PracticeScreen({ language, onChangeLanguage, resume, onProgressChange }: PracticeScreenProps) {
   const insets = useSafeAreaInsets()
   const transitionIdRef = useRef(0)
   const words = language.words
 
-  const [order, setOrder] = useState<number[]>(() => shuffledIndices(words.length))
-  const [pos, setPos] = useState(0)
+  const [order, setOrder] = useState<number[]>(() => resume?.order ?? shuffledIndices(words.length))
+  const [pos, setPos] = useState(() => {
+    const idx = resume?.results.findIndex((r) => r === null) ?? -1
+    return idx === -1 ? 0 : idx
+  })
   const [flipped, setFlipped] = useState(false)
   const [slideTransition, setSlideTransition] = useState<SlideTransition>(null)
   const [direction, setDirection] = useState<Direction>('target-en')
   const [settingsOpen, setSettingsOpen] = useState(false)
-  const [results, setResults] = useState<(Judgment | null)[]>(() => Array(order.length).fill(null))
+  const [results, setResults] = useState<(Judgment | null)[]>(() => resume?.results ?? Array(order.length).fill(null))
   const [showResults, setShowResults] = useState(false)
+  const [flashMark, setFlashMark] = useState<Judgment | null>(null)
 
   const wordIndex = order[pos]
   const card = words[wordIndex]
@@ -66,6 +71,8 @@ export function PracticeScreen({ language, onChangeLanguage }: PracticeScreenPro
   }
 
   function beginSession(newOrder: number[]) {
+    clearGameProgress(language.code)
+    onProgressChange(null)
     setOrder(newOrder)
     setPos(0)
     setFlipped(false)
@@ -92,15 +99,24 @@ export function PracticeScreen({ language, onChangeLanguage }: PracticeScreenPro
   }
 
   function mark(judgment: Judgment) {
+    let nextResults: (Judgment | null)[] = results
     setResults((r) => {
-      const next = [...r]
-      next[pos] = judgment
-      return next
+      nextResults = [...r]
+      nextResults[pos] = judgment
+      return nextResults
     })
+    setFlashMark(judgment)
     setFlipped(false)
     beginSlide('forward')
-    if (pos + 1 >= order.length) setShowResults(true)
-    else setPos((p) => p + 1)
+    if (pos + 1 >= order.length) {
+      setShowResults(true)
+      clearGameProgress(language.code)
+      onProgressChange(null)
+    } else {
+      setPos((p) => p + 1)
+      saveGameProgress(language.code, { order, results: nextResults })
+      onProgressChange({ order, results: nextResults })
+    }
   }
 
   function markWrong() {
@@ -138,13 +154,7 @@ export function PracticeScreen({ language, onChangeLanguage }: PracticeScreenPro
 
       <View style={styles.body}>
         <View style={styles.header}>
-          <ModeBar
-            direction={direction}
-            languageCode={language.code}
-            languageName={language.name}
-            onToggleDirection={toggleDirection}
-          />
-          <View style={styles.headerButtons}>
+          <View style={styles.headerLeft}>
             <Pressable
               onPress={onChangeLanguage}
               style={styles.changeLanguageButton}
@@ -152,8 +162,14 @@ export function PracticeScreen({ language, onChangeLanguage }: PracticeScreenPro
             >
               <BackArrowIcon color={colors.muted} />
             </Pressable>
-            <SettingsButton onPress={() => setSettingsOpen(true)} />
+            <ModeBar
+              direction={direction}
+              languageCode={language.code}
+              languageName={language.name}
+              onToggleDirection={toggleDirection}
+            />
           </View>
+          <SettingsButton onPress={() => setSettingsOpen(true)} />
         </View>
 
         <View style={styles.stageWrap}>
@@ -162,7 +178,10 @@ export function PracticeScreen({ language, onChangeLanguage }: PracticeScreenPro
               current={current}
               currentKey={pos}
               slideTransition={slideTransition}
-              onSlideEnd={() => setSlideTransition(null)}
+              onSlideEnd={() => {
+                setSlideTransition(null)
+                setFlashMark(null)
+              }}
               onFlip={handleFlip}
               onSwipeNext={goNext}
               onSwipePrev={goPrev}
@@ -180,7 +199,8 @@ export function PracticeScreen({ language, onChangeLanguage }: PracticeScreenPro
             onMarkCorrect={markCorrect}
             wrongCount={wrongCount}
             correctCount={correctCount}
-            currentMark={currentMark}
+            currentMark={flashMark ?? currentMark}
+            settledMark={currentMark}
           />
         </View>
       </View>
@@ -224,7 +244,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     paddingTop: 12,
   },
-  headerButtons: {
+  headerLeft: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,

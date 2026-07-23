@@ -25,25 +25,35 @@ export function FlashCard({ front, back, frontLabel, backLabel, flipped, number 
     })
   }, [flipped, rotation])
 
-  const flipStyle = useAnimatedStyle(() => ({
+  // Each face gets its own rotateY (offset 180° apart) rather than sharing one
+  // parent rotation + a static compensating rotation on the back face. That way
+  // whichever face is actually visible at rest always lands on a true rotateY(0)
+  // identity transform, instead of composing two 3D transforms that iOS's
+  // backface-visibility culling misjudges (blank/mirrored back face).
+  const frontFaceStyle = useAnimatedStyle(() => ({
     transform: [{ perspective: 1200 }, { rotateY: `${rotation.value}deg` }],
+    opacity: rotation.value < 90 ? 1 : 0,
+  }))
+  const backFaceStyle = useAnimatedStyle(() => ({
+    transform: [{ perspective: 1200 }, { rotateY: `${rotation.value - 180}deg` }],
+    opacity: rotation.value >= 90 ? 1 : 0,
   }))
 
   return (
-    <Animated.View style={[styles.flipContainer, flipStyle]}>
-      <View style={[styles.face, styles.front]}>
+    <View style={styles.flipContainer}>
+      <Animated.View style={[styles.face, styles.front, frontFaceStyle]}>
         <Text style={styles.badge}>{number}</Text>
         <Text style={styles.label}>{frontLabel}</Text>
         <Text style={styles.word}>{front}</Text>
         <Text style={styles.hint}>Tap to reveal</Text>
-      </View>
-      <View style={[styles.face, styles.back]}>
+      </Animated.View>
+      <Animated.View style={[styles.face, styles.back, backFaceStyle]}>
         <Text style={styles.badge}>{number}</Text>
         <Text style={[styles.label, styles.backLabel]}>{backLabel}</Text>
         <Text style={styles.word}>{back}</Text>
         <Text style={[styles.hint, styles.backLabel]}>Tap to flip back</Text>
-      </View>
-    </Animated.View>
+      </Animated.View>
+    </View>
   )
 }
 
@@ -63,7 +73,11 @@ const styles = StyleSheet.create({
     gap: 12,
     borderRadius: 24,
     paddingHorizontal: 24,
-    backfaceVisibility: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.12,
+    shadowRadius: 16,
+    elevation: 6,
   },
   front: {
     backgroundColor: colors.white,
@@ -74,7 +88,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.accentLight,
     borderWidth: 1,
     borderColor: colors.accentBorder,
-    transform: [{ rotateY: '180deg' }],
   },
   badge: {
     position: 'absolute',

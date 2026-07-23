@@ -1,15 +1,19 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { LANGUAGES } from '../data/languages'
+import { GameProgress } from '../lib/gameProgress'
 import { colors } from '../theme/colors'
 import { fonts } from '../theme/typography'
 import { FLAGS } from './Flags'
 
 type LanguageSelectScreenProps = {
   onSelect: (code: string) => void
+  onLogOut: () => void
+  onOpenFeedback: () => void
+  gameProgress: Record<string, GameProgress>
 }
 
-export function LanguageSelectScreen({ onSelect }: LanguageSelectScreenProps) {
+export function LanguageSelectScreen({ onSelect, onLogOut, onOpenFeedback, gameProgress }: LanguageSelectScreenProps) {
   const insets = useSafeAreaInsets()
 
   return (
@@ -21,11 +25,12 @@ export function LanguageSelectScreen({ onSelect }: LanguageSelectScreenProps) {
         ]}
       >
         <Text style={styles.heading}>Choose a language</Text>
-        <Text style={styles.subheading}>1000 most common words, translated to English</Text>
+        <Text style={styles.subheading}>Learn the 1000 most common words of any language</Text>
 
         <View style={styles.list}>
           {LANGUAGES.map((language) => {
             const Flag = FLAGS[language.code]
+            const progress = gameProgress[language.code]
             return (
               <Pressable
                 key={language.code}
@@ -38,10 +43,26 @@ export function LanguageSelectScreen({ onSelect }: LanguageSelectScreenProps) {
                   <Text style={styles.rowName}>{language.name}</Text>
                   <Text style={styles.rowNative}>{language.nativeName}</Text>
                 </View>
+                {progress && (
+                  <View style={styles.continueBox}>
+                    <Text style={styles.continueLabel}>Continue &gt;</Text>
+                    <Text style={styles.continueFraction}>
+                      {progress.results.filter((r) => r !== null).length}/{progress.order.length}
+                    </Text>
+                  </View>
+                )}
               </Pressable>
             )
           })}
         </View>
+
+        <Pressable onPress={onOpenFeedback} style={styles.feedbackLink} accessibilityLabel="Support & Feedback">
+          <Text style={styles.footerLinkLabel}>Support & Feedback</Text>
+        </Pressable>
+
+        <Pressable onPress={onLogOut} style={styles.logOut} accessibilityLabel="Log out">
+          <Text style={styles.logOutLabel}>Log out</Text>
+        </Pressable>
       </ScrollView>
     </View>
   )
@@ -75,6 +96,24 @@ const styles = StyleSheet.create({
     marginTop: 24,
     gap: 10,
   },
+  feedbackLink: {
+    marginTop: 24,
+    alignItems: 'center',
+  },
+  logOut: {
+    marginTop: 12,
+    alignItems: 'center',
+  },
+  footerLinkLabel: {
+    fontSize: 14,
+    fontFamily: fonts.semiBold,
+    color: colors.muted,
+  },
+  logOutLabel: {
+    fontSize: 14,
+    fontFamily: fonts.semiBold,
+    color: colors.danger,
+  },
   row: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -94,6 +133,20 @@ const styles = StyleSheet.create({
     color: colors.ink,
   },
   rowNative: {
+    fontSize: 13,
+    fontFamily: fonts.semiBold,
+    color: colors.muted,
+    marginTop: 2,
+  },
+  continueBox: {
+    alignItems: 'flex-end',
+  },
+  continueLabel: {
+    fontSize: 13,
+    fontFamily: fonts.bold,
+    color: colors.accent,
+  },
+  continueFraction: {
     fontSize: 13,
     fontFamily: fonts.semiBold,
     color: colors.muted,
