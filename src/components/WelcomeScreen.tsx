@@ -108,11 +108,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   hero: {
-    height: 180,
-    width: 180,
-    borderRadius: 90,
-    overflow: 'hidden',
-    backgroundColor: colors.primaryLight,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -121,7 +116,7 @@ const styles = StyleSheet.create({
     width: 180,
   },
   heading: {
-    marginTop: 28,
+    marginTop: 12,
     fontSize: 24,
     fontFamily: fonts.extraBold,
     color: colors.ink,

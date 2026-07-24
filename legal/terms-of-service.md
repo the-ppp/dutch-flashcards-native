@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Last updated: [DATE]**
+**Last updated: 24/07/2026**
 
 These Terms of Service ("Terms") govern your use of LingoFlip (the "app"). By creating an account or using the app, you agree to these Terms.
 
@@ -26,7 +26,7 @@ Flashcard content provided in the app is for personal learning use. We may add, 
 
 ## Termination
 
-We may suspend or terminate your account if you violate these Terms. You may delete your account at any time by contacting us at [SUPPORT EMAIL].
+We may suspend or terminate your account if you violate these Terms. You may delete your account at any time by contacting us at pedromppinto.mail@gmail.com.
 
 ## Disclaimer
 
@@ -42,4 +42,4 @@ We may update these Terms from time to time. Continued use of the app after chan
 
 ## Contact
 
-Questions about these Terms? Contact us at [SUPPORT EMAIL].
+Questions about these Terms? Contact us at pedromppinto.mail@gmail.com.

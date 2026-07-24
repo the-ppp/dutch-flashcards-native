@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Last updated: [DATE]**
+**Last updated: 24/07/2026**
 
 LingoFlip ("we", "our", "the app") is a flashcard app for learning languages. This policy explains what data we collect and how we use it.
 
@@ -34,7 +34,7 @@ We retain your account data for as long as your account is active. You can reque
 
 ## Your Rights
 
-You may request access to, correction of, or deletion of your personal data at any time by contacting us at [SUPPORT EMAIL].
+You may request access to, correction of, or deletion of your personal data at any time by contacting us at pedromppinto.mail@gmail.com.
 
 ## Children's Privacy
 
@@ -46,4 +46,4 @@ We may update this policy from time to time. We will update the "Last updated" d
 
 ## Contact
 
-Questions about this policy? Contact us at [SUPPORT EMAIL].
+Questions about this policy? Contact us at pedromppinto.mail@gmail.com.
