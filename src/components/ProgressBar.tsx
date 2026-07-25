@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     height: 32,
     width: '100%',
     overflow: 'hidden',
-    backgroundColor: colors.track,
+    backgroundColor: colors.muted,
   },
   fill: {
     height: '100%',

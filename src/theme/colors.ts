@@ -11,6 +11,6 @@ export const colors = {
   danger: '#ff4b4b',
   dangerLight: '#ffe1e1',
   white: '#ffffff',
-  accentBorder: 'rgba(28, 176, 246, 0.3)',
+  accentBorder: '#aae0fc',
   modalBackdrop: 'rgba(0, 0, 0, 0.4)',
 } as const
