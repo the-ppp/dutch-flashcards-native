@@ -28,8 +28,8 @@ export function FlashCard({ front, back, frontLabel, backLabel, flipped, number 
   // Each face gets its own rotateY (offset 180° apart) rather than sharing one
   // parent rotation + a static compensating rotation on the back face. That way
   // whichever face is actually visible at rest always lands on a true rotateY(0)
-  // identity transform (crisp), instead of the back face permanently carrying a
-  // residual 3D transform that iOS renders through a blurrier compositing path.
+  // identity transform, instead of composing two 3D transforms that iOS's
+  // backface-visibility culling misjudges (blank/mirrored back face).
   const frontFaceStyle = useAnimatedStyle(() => ({
     transform: [{ perspective: 1200 }, { rotateY: `${rotation.value}deg` }],
     opacity: rotation.value < 90 ? 1 : 0,
@@ -73,6 +73,11 @@ const styles = StyleSheet.create({
     gap: 12,
     borderRadius: 24,
     paddingHorizontal: 24,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.12,
+    shadowRadius: 16,
+    elevation: 6,
   },
   front: {
     backgroundColor: colors.white,

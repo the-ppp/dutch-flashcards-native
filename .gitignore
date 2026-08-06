@@ -18,12 +18,6 @@ expo-env.d.ts
 *.key
 *.mobileprovision
 
-# Firebase / Google service config — carries the project API key, inject at build time
-GoogleService-Info.plist
-google-services.json
-**/GoogleService-Info.plist
-**/google-services.json
-
 # Metro
 .metro-health-check*
 
@@ -47,6 +41,12 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Firebase config (per-environment, supplied via EAS secret for builds)
+GoogleService-Info.plist
+google-services.json
+**/GoogleService-Info.plist
+**/google-services.json
 
 # other
 references

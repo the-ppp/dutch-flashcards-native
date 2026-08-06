@@ -1,14 +1,23 @@
 {
   "expo": {
     "name": "LingoFlip",
-    "slug": "dutch-flashcards-native",
+    "slug": "lingoflip",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.pedropinto.lingoflip"
+      "bundleIdentifier": "com.easylanguagecards.app",
+      "buildNumber": "1",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "appleTeamId": "KXRA5SN5WF",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "LingoFlip connects to a local development server when running a development build."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +26,8 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.easylanguagecards.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,7 +42,40 @@
           "backgroundColor": "#ffffff"
         }
       ],
-      "expo-font"
-    ]
+      "expo-font",
+      "expo-apple-authentication",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.1097021594922-r8kgli5tqcj9btmptd3csacljsfmcu20"
+        }
+      ],
+      "@react-native-firebase/app",
+      [
+        "@react-native-firebase/analytics",
+        {
+          "ios": {
+            "googleAppMeasurementOnDeviceConversion": true
+          }
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static",
+            "forceStaticLinking": [
+              "RNFBApp"
+            ]
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9592b4d2-469e-4623-a7a9-d2b24e88120b"
+      }
+    },
+    "owner": "the-ppp"
   }
 }

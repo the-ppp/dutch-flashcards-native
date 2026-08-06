@@ -1,178 +1,238 @@
-import { useRef, useState } from 'react'
-import { StyleSheet, View } from 'react-native'
-import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import words from './data/words.json'
-import { shuffledIndices } from './lib/shuffledIndices'
+import { useEffect, useRef, useState } from 'react'
+import { StyleSheet, View, useWindowDimensions } from 'react-native'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import { LANGUAGES, getLanguage } from './data/languages'
+import { GameProgress, isValidGameProgress, loadAllGameProgress } from './lib/gameProgress'
 import { colors } from './theme/colors'
-import { CardStage, CardSnapshot, SlideTransition } from './components/CardStage'
-import { ProgressBar } from './components/ProgressBar'
-import { ModeBar } from './components/ModeBar'
-import { SettingsButton } from './components/SettingsButton'
-import { Controls } from './components/Controls'
-import { PracticeSettingsModal } from './components/PracticeSettingsModal'
-import { ResultsModal } from './components/ResultsModal'
+import { useAuth } from './hooks/useAuth'
+import { signOut } from './lib/auth'
+import { trackScreenView } from './lib/analytics'
+import { WelcomeScreen } from './components/WelcomeScreen'
+import { LoginScreen } from './components/LoginScreen'
+import { SignUpScreen } from './components/SignUpScreen'
+import { LanguageSelectScreen } from './components/LanguageSelectScreen'
+import { PracticeScreen } from './components/PracticeScreen'
+import { FeedbackScreen } from './components/FeedbackScreen'
+import { SlideLayer } from './components/SlideLayer'
 
-type Direction = 'nl-en' | 'en-nl'
-type Judgment = 'correct' | 'wrong'
+const STORAGE_KEY = 'selectedLanguageCode'
 
 export default function App() {
-  const insets = useSafeAreaInsets()
-  const transitionIdRef = useRef(0)
+  const auth = useAuth()
+  const [selectedCode, setSelectedCode] = useState<string | null | 'loading'>('loading')
+  const [gameProgress, setGameProgress] = useState<Record<string, GameProgress> | 'loading'>('loading')
+  const [transitioning, setTransitioning] = useState<'entering' | 'exiting' | null>(null)
+  const [feedbackOpen, setFeedbackOpen] = useState(false)
+  const [feedbackTransitioning, setFeedbackTransitioning] = useState<'entering' | 'exiting' | null>(null)
+  const [authScreen, setAuthScreen] = useState<'welcome' | 'login' | 'signup'>('welcome')
+  const [authTransitioning, setAuthTransitioning] = useState<'entering' | 'exiting' | null>(null)
+  const [entering, setEntering] = useState(false)
+  const prevAuthStatusRef = useRef(auth.status)
+  const initialScreenTrackedRef = useRef(false)
+  const { width } = useWindowDimensions()
 
-  const [order, setOrder] = useState<number[]>(() => shuffledIndices(words.length))
-  const [pos, setPos] = useState(0)
-  const [flipped, setFlipped] = useState(false)
-  const [slideTransition, setSlideTransition] = useState<SlideTransition>(null)
-  const [direction, setDirection] = useState<Direction>('nl-en')
-  const [settingsOpen, setSettingsOpen] = useState(false)
-  const [results, setResults] = useState<(Judgment | null)[]>(() => Array(order.length).fill(null))
-  const [showResults, setShowResults] = useState(false)
-
-  const wordIndex = order[pos]
-  const card = words[wordIndex]
-  const front = direction === 'nl-en' ? card.dutch : card.english
-  const back = direction === 'nl-en' ? card.english : card.dutch
-  const frontLabel = direction === 'nl-en' ? 'Dutch' : 'English'
-  const backLabel = direction === 'nl-en' ? 'English' : 'Dutch'
-
-  const correctCount = results.filter((r) => r === 'correct').length
-  const wrongCount = results.filter((r) => r === 'wrong').length
-  const answeredCount = results.filter((r) => r !== null).length
-  const hasNext = pos < answeredCount
-  const hasPrev = pos > 0
-  const currentMark = results[pos]
-
-  function beginSlide(dir: 'forward' | 'backward') {
-    transitionIdRef.current += 1
-    setSlideTransition({
-      id: transitionIdRef.current,
-      direction: dir,
-      outgoing: { front, back, frontLabel, backLabel, number: pos + 1, flipped },
-    })
+  // Adjust `entering` synchronously during render (not in an effect) so the very
+  // render where auth.status flips already reflects it — avoids a one-frame flash
+  // of the unanimated app before the slide-in overlay appears.
+  if (prevAuthStatusRef.current !== auth.status) {
+    const prevStatus = prevAuthStatusRef.current
+    prevAuthStatusRef.current = auth.status
+    if (auth.status === 'signedIn' && prevStatus === 'signedOut') {
+      setEntering(true)
+    } else if (auth.status !== 'signedIn') {
+      setEntering(false)
+    }
   }
 
-  function beginSession(newOrder: number[]) {
-    setOrder(newOrder)
-    setPos(0)
-    setFlipped(false)
-    setResults(Array(newOrder.length).fill(null))
-    setShowResults(false)
+  useEffect(() => {
+    AsyncStorage.getItem(STORAGE_KEY)
+      .then((code) => {
+        setSelectedCode(code && getLanguage(code) ? code : null)
+      })
+      .catch(() => {
+        setSelectedCode(null)
+      })
+  }, [])
+
+  useEffect(() => {
+    refreshGameProgress()
+  }, [])
+
+  useEffect(() => {
+    if (auth.status === 'signedIn') {
+      setAuthScreen('welcome')
+      setAuthTransitioning(null)
+    }
+  }, [auth.status])
+
+  useEffect(() => {
+    if (initialScreenTrackedRef.current) return
+    if (auth.status === 'loading' || selectedCode === 'loading' || gameProgress === 'loading') return
+    initialScreenTrackedRef.current = true
+    if (auth.status !== 'signedIn') {
+      trackScreenView('Welcome')
+    } else if (selectedCode && getLanguage(selectedCode)) {
+      trackScreenView('Practice')
+    } else {
+      trackScreenView('LanguageSelect')
+    }
+  }, [auth.status, selectedCode, gameProgress])
+
+  async function refreshGameProgress() {
+    const raw = await loadAllGameProgress(LANGUAGES.map((language) => language.code))
+    const sanitized: Record<string, GameProgress> = {}
+    for (const language of LANGUAGES) {
+      const progress = raw[language.code]
+      if (progress && isValidGameProgress(progress, language.words.length)) {
+        sanitized[language.code] = progress
+      }
+    }
+    setGameProgress(sanitized)
   }
 
-  function goNext() {
-    if (pos >= answeredCount) return
-    beginSlide('forward')
-    setFlipped(false)
-    setPos((p) => p + 1)
-  }
-
-  function goPrev() {
-    beginSlide('backward')
-    setFlipped(false)
-    setPos((p) => Math.max(0, p - 1))
-  }
-
-  function toggleDirection() {
-    setDirection((d) => (d === 'nl-en' ? 'en-nl' : 'nl-en'))
-    setFlipped(false)
-  }
-
-  function mark(judgment: Judgment) {
-    setResults((r) => {
-      const next = [...r]
-      next[pos] = judgment
+  function updateGameProgress(code: string, progress: GameProgress | null) {
+    setGameProgress((prev) => {
+      if (prev === 'loading') return prev
+      const next = { ...prev }
+      if (progress) next[code] = progress
+      else delete next[code]
       return next
     })
-    setFlipped(false)
-    beginSlide('forward')
-    if (pos + 1 >= order.length) setShowResults(true)
-    else setPos((p) => p + 1)
   }
 
-  function markWrong() {
-    mark('wrong')
+  function selectLanguage(code: string) {
+    AsyncStorage.setItem(STORAGE_KEY, code)
+    setSelectedCode(code)
+    setTransitioning('entering')
+    trackScreenView('Practice')
   }
 
-  function markCorrect() {
-    mark('correct')
+  function changeLanguage() {
+    setTransitioning('exiting')
   }
 
-  function startPractice(size: number) {
-    beginSession(shuffledIndices(words.length).slice(0, size))
-    setSettingsOpen(false)
+  function finishExit() {
+    setSelectedCode(null)
+    setTransitioning(null)
+    trackScreenView('LanguageSelect')
   }
 
-  function handleRepeat() {
-    beginSession(order)
+  function openFeedback() {
+    setFeedbackOpen(true)
+    setFeedbackTransitioning('entering')
+    trackScreenView('Feedback')
   }
 
-  function handleNewCards() {
-    beginSession(shuffledIndices(words.length).slice(0, order.length))
+  function closeFeedback() {
+    setFeedbackTransitioning('exiting')
   }
 
-  function handleFlip() {
-    setFlipped((f) => !f)
+  function finishFeedbackExit() {
+    setFeedbackOpen(false)
+    setFeedbackTransitioning(null)
+    trackScreenView('LanguageSelect')
   }
 
-  const current: CardSnapshot = { front, back, frontLabel, backLabel, number: pos + 1, flipped }
+  function openLogin() {
+    setAuthScreen('login')
+    setAuthTransitioning('entering')
+    trackScreenView('Login')
+  }
+
+  function openSignUp() {
+    setAuthScreen('signup')
+    setAuthTransitioning('entering')
+    trackScreenView('SignUp')
+  }
+
+  function closeAuthOverlay() {
+    setAuthTransitioning('exiting')
+  }
+
+  function finishAuthExit() {
+    setAuthScreen('welcome')
+    setAuthTransitioning(null)
+  }
+
+  function logOut() {
+    signOut()
+    setSelectedCode(null)
+    setTransitioning(null)
+  }
+
+  if (auth.status === 'loading' || selectedCode === 'loading' || gameProgress === 'loading') {
+    return <View style={styles.root} />
+  }
+
+  const language = selectedCode ? getLanguage(selectedCode) : undefined
+  const resume = language ? gameProgress[language.code] : undefined
+
+  const appTree = (
+    <View style={styles.root}>
+      <LanguageSelectScreen
+        onSelect={selectLanguage}
+        onLogOut={logOut}
+        onOpenFeedback={openFeedback}
+        gameProgress={gameProgress}
+      />
+      {language && (
+        <SlideLayer
+          key={transitioning === 'exiting' ? `exit-${selectedCode}` : `enter-${selectedCode}`}
+          from={transitioning === 'entering' ? width : 0}
+          to={transitioning === 'exiting' ? width : 0}
+          onSettled={transitioning === 'exiting' ? finishExit : undefined}
+          interactive={transitioning !== 'exiting'}
+        >
+          <PracticeScreen
+            language={language}
+            onChangeLanguage={changeLanguage}
+            resume={resume}
+            onProgressChange={(progress) => updateGameProgress(language.code, progress)}
+          />
+        </SlideLayer>
+      )}
+      {feedbackOpen && (
+        <SlideLayer
+          key={feedbackTransitioning === 'exiting' ? 'exit-feedback' : 'enter-feedback'}
+          from={feedbackTransitioning === 'entering' ? width : 0}
+          to={feedbackTransitioning === 'exiting' ? width : 0}
+          onSettled={feedbackTransitioning === 'exiting' ? finishFeedbackExit : undefined}
+          interactive={feedbackTransitioning !== 'exiting'}
+        >
+          <FeedbackScreen onBack={closeFeedback} />
+        </SlideLayer>
+      )}
+    </View>
+  )
+
+  if (auth.status === 'signedIn' && !entering) {
+    return appTree
+  }
 
   return (
     <View style={styles.root}>
-      <View style={{ paddingTop: insets.top }}>
-        <ProgressBar current={pos} total={order.length} />
+      <View style={styles.root} pointerEvents={entering ? 'none' : 'auto'}>
+        <WelcomeScreen onNavigateToLogin={openLogin} onNavigateToSignUp={openSignUp} />
+        {authScreen !== 'welcome' && (
+          <SlideLayer
+            key={authTransitioning === 'exiting' ? `exit-${authScreen}` : `enter-${authScreen}`}
+            from={authTransitioning === 'entering' ? width : 0}
+            to={authTransitioning === 'exiting' ? width : 0}
+            onSettled={authTransitioning === 'exiting' ? finishAuthExit : undefined}
+            interactive={authTransitioning !== 'exiting'}
+          >
+            {authScreen === 'login' ? (
+              <LoginScreen onBack={closeAuthOverlay} />
+            ) : (
+              <SignUpScreen onBack={closeAuthOverlay} />
+            )}
+          </SlideLayer>
+        )}
       </View>
-
-      <View style={styles.body}>
-        <View style={styles.header}>
-          <ModeBar direction={direction} onToggleDirection={toggleDirection} />
-          <SettingsButton onPress={() => setSettingsOpen(true)} />
-        </View>
-
-        <View style={styles.stageWrap}>
-          <View style={styles.cardBox}>
-            <CardStage
-              current={current}
-              currentKey={pos}
-              slideTransition={slideTransition}
-              onSlideEnd={() => setSlideTransition(null)}
-              onFlip={handleFlip}
-              onSwipeNext={goNext}
-              onSwipePrev={goPrev}
-            />
-          </View>
-        </View>
-
-        <View style={[styles.footer, { paddingBottom: Math.max(16, insets.bottom) }]}>
-          <Controls
-            onPrev={goPrev}
-            onNext={goNext}
-            hasPrev={hasPrev}
-            hasNext={hasNext}
-            onMarkWrong={markWrong}
-            onMarkCorrect={markCorrect}
-            wrongCount={wrongCount}
-            correctCount={correctCount}
-            currentMark={currentMark}
-          />
-        </View>
-      </View>
-
-      {settingsOpen && (
-        <PracticeSettingsModal
-          totalWords={words.length}
-          currentSize={order.length}
-          onConfirm={startPractice}
-          onClose={() => setSettingsOpen(false)}
-        />
-      )}
-
-      {showResults && (
-        <ResultsModal
-          correctCount={correctCount}
-          wrongCount={wrongCount}
-          onRepeat={handleRepeat}
-          onNewCards={handleNewCards}
-        />
+      {entering && (
+        <SlideLayer key="app-enter" from={width} to={0} onSettled={() => setEntering(false)} interactive>
+          {appTree}
+        </SlideLayer>
       )}
     </View>
   )
@@ -181,33 +241,6 @@ export default function App() {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    width: '100%',
-    maxWidth: 448,
-    alignSelf: 'center',
     backgroundColor: colors.white,
-  },
-  body: {
-    flex: 1,
-    paddingHorizontal: 20,
-  },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingTop: 12,
-  },
-  stageWrap: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingVertical: 24,
-  },
-  cardBox: {
-    width: '100%',
-    maxWidth: 384,
-    aspectRatio: 0.7,
-  },
-  footer: {
-    paddingBottom: 16,
   },
 })

@@ -1,4 +1,5 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
+import * as Haptics from 'expo-haptics'
 import Svg, { Line, Path } from 'react-native-svg'
 import { colors } from '../theme/colors'
 import { fonts } from '../theme/typography'
@@ -42,6 +43,7 @@ type ControlsProps = {
   wrongCount: number
   correctCount: number
   currentMark: Mark
+  settledMark: Mark
 }
 
 const EDGE_DEPTH = 4
@@ -56,14 +58,35 @@ export function Controls({
   wrongCount,
   correctCount,
   currentMark,
+  settledMark,
 }: ControlsProps) {
-  const wrongFlush = currentMark === 'correct'
-  const correctFlush = currentMark === 'wrong'
+  const wrongFlush = settledMark === 'correct'
+  const correctFlush = settledMark === 'wrong'
+
+  function handlePrev() {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
+    onPrev()
+  }
+
+  function handleNext() {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light)
+    onNext()
+  }
+
+  function handleMarkWrong() {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium)
+    onMarkWrong()
+  }
+
+  function handleMarkCorrect() {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium)
+    onMarkCorrect()
+  }
 
   return (
     <View style={styles.row}>
       <EdgeButton
-        onPress={onPrev}
+        onPress={handlePrev}
         disabled={!hasPrev}
         depth={EDGE_DEPTH}
         edgeColor={colors.track}
@@ -73,48 +96,44 @@ export function Controls({
         <ArrowIcon direction="left" color={colors.muted} />
       </EdgeButton>
 
-      <Pressable onPress={onMarkWrong} style={styles.judgeContainer}>
-        <View
-          style={[
-            StyleSheet.absoluteFill,
-            { top: EDGE_DEPTH, backgroundColor: colors.danger, borderRadius: 16 },
-          ]}
-        />
-        <View
-          style={[
-            styles.judgeFace,
-            { borderColor: colors.danger },
-            currentMark === 'wrong' ? { backgroundColor: colors.dangerLight } : { backgroundColor: colors.white },
-            wrongFlush ? { transform: [{ translateY: EDGE_DEPTH }] } : { transform: [{ translateY: 0 }] },
-          ]}
-        >
-          <XIcon color={colors.danger} />
-          <Text style={[styles.judgeCount, { color: colors.danger }]}>{wrongCount}</Text>
-        </View>
-      </Pressable>
-
-      <Pressable onPress={onMarkCorrect} style={styles.judgeContainer}>
-        <View
-          style={[
-            StyleSheet.absoluteFill,
-            { top: EDGE_DEPTH, backgroundColor: colors.primary, borderRadius: 16 },
-          ]}
-        />
-        <View
-          style={[
-            styles.judgeFace,
-            { borderColor: colors.primary },
-            currentMark === 'correct' ? { backgroundColor: colors.primaryLight } : { backgroundColor: colors.white },
-            correctFlush ? { transform: [{ translateY: EDGE_DEPTH }] } : { transform: [{ translateY: 0 }] },
-          ]}
-        >
-          <Text style={[styles.judgeCount, { color: colors.primary }]}>{correctCount}</Text>
-          <CheckIcon color={colors.primary} />
-        </View>
-      </Pressable>
+      <EdgeButton
+        onPress={handleMarkWrong}
+        depth={EDGE_DEPTH}
+        edgeColor={colors.danger}
+        edgeRadius={16}
+        pressEffect="pulse"
+        flush={wrongFlush}
+        style={styles.judgeContainer}
+        faceStyle={[
+          styles.judgeFace,
+          { borderColor: colors.danger },
+          currentMark === 'wrong' ? { backgroundColor: colors.dangerLight } : { backgroundColor: colors.white },
+        ]}
+      >
+        <XIcon color={colors.danger} />
+        <Text style={[styles.judgeCount, { color: colors.danger }]}>{wrongCount}</Text>
+      </EdgeButton>
 
       <EdgeButton
-        onPress={onNext}
+        onPress={handleMarkCorrect}
+        depth={EDGE_DEPTH}
+        edgeColor={colors.primary}
+        edgeRadius={16}
+        pressEffect="pulse"
+        flush={correctFlush}
+        style={styles.judgeContainer}
+        faceStyle={[
+          styles.judgeFace,
+          { borderColor: colors.primary },
+          currentMark === 'correct' ? { backgroundColor: colors.primaryLight } : { backgroundColor: colors.white },
+        ]}
+      >
+        <Text style={[styles.judgeCount, { color: colors.primary }]}>{correctCount}</Text>
+        <CheckIcon color={colors.primary} />
+      </EdgeButton>
+
+      <EdgeButton
+        onPress={handleNext}
         disabled={!hasNext}
         depth={EDGE_DEPTH}
         edgeColor={colors.accent}
