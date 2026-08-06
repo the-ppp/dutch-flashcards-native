@@ -78,6 +78,7 @@ export function SignUpScreen({ onBack }: SignUpScreenProps) {
           depth={4}
           edgeColor={colors.primaryDark}
           edgeRadius={16}
+          pressEffect="shrink"
           style={styles.submitButton}
           faceStyle={styles.submitFace}
         >
@@ -85,7 +86,7 @@ export function SignUpScreen({ onBack }: SignUpScreenProps) {
         </EdgeButton>
 
         <View style={styles.social}>
-          <SocialSignInButtons onGoogle={handleGoogle} onApple={handleApple} />
+          <SocialSignInButtons onGoogle={handleGoogle} onApple={handleApple} pressEffect="shrink" />
         </View>
       </ScrollView>
     </View>

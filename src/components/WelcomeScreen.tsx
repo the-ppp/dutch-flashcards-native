@@ -65,13 +65,14 @@ export function WelcomeScreen({ onNavigateToLogin, onNavigateToSignUp }: Welcome
         {error && <Text style={styles.error}>{error}</Text>}
 
         <View style={styles.buttons}>
-          <SocialSignInButtons onGoogle={handleGoogle} onApple={handleApple} />
+          <SocialSignInButtons onGoogle={handleGoogle} onApple={handleApple} pressEffect="shrink" />
 
           <EdgeButton
             onPress={onNavigateToSignUp}
             depth={3}
             edgeColor={colors.track}
             edgeRadius={16}
+            pressEffect="shrink"
             style={styles.emailButton}
             faceStyle={styles.emailFace}
           >

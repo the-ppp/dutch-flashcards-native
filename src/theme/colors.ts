@@ -8,6 +8,7 @@ export const colors = {
   ink: '#3c3c3c',
   muted: '#afafaf',
   track: '#e5e5e5',
+  trackDark: '#8e8e8e',
   danger: '#ff4b4b',
   dangerLight: '#ffe1e1',
   white: '#ffffff',

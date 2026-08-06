@@ -93,6 +93,7 @@ export function LoginScreen({ onBack }: LoginScreenProps) {
           depth={4}
           edgeColor={colors.primaryDark}
           edgeRadius={16}
+          pressEffect="shrink"
           style={styles.loginButton}
           faceStyle={styles.loginFace}
         >
@@ -104,7 +105,7 @@ export function LoginScreen({ onBack }: LoginScreenProps) {
         </Text>
 
         <View style={styles.social}>
-          <SocialSignInButtons onGoogle={handleGoogle} onApple={handleApple} />
+          <SocialSignInButtons onGoogle={handleGoogle} onApple={handleApple} pressEffect="shrink" />
         </View>
       </ScrollView>
     </View>

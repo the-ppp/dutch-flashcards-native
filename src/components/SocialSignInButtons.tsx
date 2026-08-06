@@ -9,6 +9,7 @@ import { EdgeButton } from './EdgeButton'
 type SocialSignInButtonsProps = {
   onGoogle: () => void
   onApple: () => void
+  pressEffect?: 'edge' | 'shrink'
 }
 
 function GoogleIcon() {
@@ -45,7 +46,7 @@ function AppleIcon() {
   )
 }
 
-export function SocialSignInButtons({ onGoogle, onApple }: SocialSignInButtonsProps) {
+export function SocialSignInButtons({ onGoogle, onApple, pressEffect = 'edge' }: SocialSignInButtonsProps) {
   const [appleAvailable, setAppleAvailable] = useState(false)
 
   useEffect(() => {
@@ -60,6 +61,7 @@ export function SocialSignInButtons({ onGoogle, onApple }: SocialSignInButtonsPr
         depth={4}
         edgeColor={colors.accentDark}
         edgeRadius={24}
+        pressEffect={pressEffect}
         style={styles.button}
         faceStyle={[styles.face, { backgroundColor: colors.accent }]}
       >
@@ -75,6 +77,7 @@ export function SocialSignInButtons({ onGoogle, onApple }: SocialSignInButtonsPr
           depth={4}
           edgeColor={colors.black}
           edgeRadius={24}
+          pressEffect={pressEffect}
           style={styles.button}
           faceStyle={[styles.face, { backgroundColor: colors.black }]}
         >

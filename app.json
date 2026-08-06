@@ -7,13 +7,16 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "icon": "./assets/LingoFlip.icon",
       "supportsTablet": false,
       "bundleIdentifier": "com.easylanguagecards.app",
       "buildNumber": "1",
       "googleServicesFile": "./GoogleService-Info.plist",
+      "appleTeamId": "KXRA5SN5WF",
       "config": {
         "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "LingoFlip connects to a local development server when running a development build."
       }
     },
     "android": {
